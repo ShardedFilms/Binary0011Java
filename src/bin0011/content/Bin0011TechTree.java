@@ -90,5 +90,10 @@ public class Bin0011TechTree implements ContentList {
 		extendNode(Items.silicon, () -> {
 			nodeProduce(Bin0011Items.item11);
 		});
+		extendNode(Blocks.scatter, () -> {
+			node(Bin0011Blocks.turret0000, Seq.with(new Produce(Bin0011Items.item00)), () -> {
+				node(Bin0011Blocks.turret0001, Seq.with(new Produce(Bin0011Items.item01)));
+			});
+		});
 	}
 }
