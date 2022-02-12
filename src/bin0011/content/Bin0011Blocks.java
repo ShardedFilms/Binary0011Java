@@ -1,4 +1,4 @@
-package abyss.content;
+package bin0011.content;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
