@@ -75,8 +75,8 @@ public class Bin0011Blocks implements ContentList {
             		requirements(Category.turret, with(Bin0011Items.item00, 32, Bin0011Items.item01, 15));
             		ammo(
                 		Bin0011Items.item00, Bullets.artilleryDense,
-                		Bin0011Items.item01, Bullets.artilleryHoming,
-            		);
+                		Bin0011Items.item01, Bullets.artilleryHoming
+			);
             		targetAir = false;
             		reloadTime = 60f;
             		recoilAmount = 2f;
