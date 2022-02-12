@@ -1,7 +1,6 @@
-# Project Abyss
-A mod that im starting to work on
-<br> will likely be archived when i lose motivation on continuing this
-<br> the way that you can compile or implement it are in the text below
+# Binary 0011
+
+0011
 
 ## Building for Desktop Testing
 
@@ -39,8 +38,3 @@ Only use `implementation` if you want to package another Java library *with your
 
 *[1]* *On Linux/Mac it's `./gradlew`, but if you're using Linux I assume you know how to run executables properly anyway.*  
 *[2]: Yes, I know this is stupid. It's a Github UI limitation - while the jar itself is uploaded unzipped, there is currently no way to download it as a single fil()e.*
-
-## Crediting
-1237(12three7#5723)
-for creating music, indonesian translation & some content
-<br>@lordReddx for russian translation
