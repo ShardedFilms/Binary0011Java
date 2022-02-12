@@ -52,25 +52,40 @@ public class Bin0011Blocks implements ContentList {
 			health = 1600;
 		}};
 		turret0000 = new ItemTurret("turret0000"){{
-            		requirements(Category.turret, with(Bin0011Items.item00, 28), true);
-            		ammo(
-                		Bin0011Items.item00, Bullets.standardCopper,
-                		Bin0011Items.item01, Bullets.standardHoming
-            		);
+            requirements(Category.turret, with(Bin0011Items.item00, 28), true);
+            ammo(
+               	Bin0011Items.item00, Bullets.standardCopper,
+               	Bin0011Items.item01, Bullets.standardHoming
+            );
+            spread = 4f;
+           	shots = 2;
+          	alternate = true;
+           	reloadTime = 17.5f;
+           	restitution = 0.03f;
+           	range = 110;
+           	shootCone = 15f;
+           	ammoUseEffect = Fx.casing1;
+           	health = 250;
+            inaccuracy = 2f;
+            rotateSpeed = 10f;
 
-            		spread = 4f;
-            		shots = 2;
-            		alternate = true;
-            		reloadTime = 17.5f;
-            		restitution = 0.03f;
-            		range = 110;
-            		shootCone = 15f;
-            		ammoUseEffect = Fx.casing1;
-            		health = 250;
-            		inaccuracy = 2f;
-            		rotateSpeed = 10f;
-
-            		limitRange();
-        	}};
+            limitRange();
+        }};
+        turret0001 = new ItemTurret("turret0001"){{
+            requirements(Category.turret, with(Bin0011Items.item00, 32, Bin0011Items.item01, 15));
+            ammo(
+                Bin0011Items.item00, Bullets.artilleryDense,
+                Bin0011Items.item01, Bullets.artilleryHoming,
+            );
+            targetAir = false;
+            reloadTime = 60f;
+            recoilAmount = 2f;
+            range = 192f;
+            inaccuracy = 0.5f;
+            shootCone = 10f;
+            health = 260;
+            shootSound = Sounds.bang;
+            limitRange(0f);
+        }};
 	}
 }
