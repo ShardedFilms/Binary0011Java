@@ -6,24 +6,24 @@ import mindustry.type.Item;
 
 public class AbyssItems implements ContentList {
 	public static Item 
-		abyss,
-		balestenite, kalenium, selemate;
+		item00,
+		item01, item10, item11;
 
 	@Override
 	public void load() {
-		abyss = new Item("abyss", Color.valueOf("212121")) {{
-			cost = 3;
+		item00 = new Item("item00", Color.valueOf("4A4B53")) {{
+			cost = 0;
 		}};
 
-		balestenite = new Item("balestenite", Color.valueOf("C0A8A6")) {{
-			cost = 2;
+		item01 = new Item("item01", Color.valueOf("4A4B53")) {{
+			cost = 0;
 		}};
-		kalenium = new Item("kalenium", Color.valueOf("DC8268")) {{
-			cost = 5;
+		item10 = new Item("item10", Color.valueOf("B0BAC0")) {{
+			cost = 0;
 		}};
-		selemate = new Item("selemate", Color.valueOf("A4A298")) {{
-			cost = 4;
-			hardness = 3;
+		item11 = new Item("item11", Color.valueOf("B0BAC0")) {{
+			cost = 0;
+			hardness = 1;
 		}};
 	}
 }
