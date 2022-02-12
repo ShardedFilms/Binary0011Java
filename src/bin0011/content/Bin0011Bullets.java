@@ -12,14 +12,13 @@ public class Bin0011Bullets implements ContentList{
 	
 		//artillery
 		art0000, art0001,
-		// njir art
 		//standard
 		std0000, std0001;
 
 	@Override
 	public void load(){
 		// reg standard
-		std0000 = new BasicBulletType(2.5f, 12){{
+		std0000 = new BasicBulletType(2.5f, 12, "bullet"){{
             		width = 7f;
             		height = 9f;
             		lifetime = 75f;
@@ -48,12 +47,12 @@ public class Bin0011Bullets implements ContentList{
         	}};
         	art0001 = new ArtilleryBulletType(3f, 27, "shell"){{
             		hitEffect = Fx.flakExplosion;
-            		knockback = 0.8f;
+            		knockback = 0.9f;
             		lifetime = 80f;
             		width = height = 11f;
             		collidesTiles = false;
             		splashDamageRadius = 25f * 0.8f;
-            		splashDamage = 39f;
+            		splashDamage = 42f;
             		reloadMultiplier = 1.2f;
             		ammoMultiplier = 3f;
             		homingPower = 1.5f;
