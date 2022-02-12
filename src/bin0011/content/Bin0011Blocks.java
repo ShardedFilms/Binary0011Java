@@ -65,7 +65,7 @@ public class Bin0011Blocks implements ContentList {
           		alternate = true;
            		reloadTime = 17.5f;
            		restitution = 0.03f;
-           		range = 110;
+           		range = 152;
            		shootCone = 15f;
            		ammoUseEffect = Fx.casing1;
            		health = 250;
@@ -84,10 +84,10 @@ public class Bin0011Blocks implements ContentList {
             		targetAir = false;
             		reloadTime = 50f;
             		recoilAmount = 1f;
-           	 	range = 240f;
+           	 	range = 256f;
             		inaccuracy = 0.5f;
             		shootCone = 10f;
-            		health = 260;
+            		health = 325;
             		shootSound = Sounds.bang;
             		limitRange(0f);
         	}};
