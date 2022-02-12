@@ -56,8 +56,8 @@ public class Bin0011Blocks implements ContentList {
 		turret0000 = new ItemTurret("turret0000"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 28), true);
             		ammo(
-				Bin0011Items.item00, Bullets.standardCopper,
-				Bin0011Items.item01, Bullets.standardHoming
+				Bin0011Items.item00, Bin0011Bullets.std0000,
+				Bin0011Items.item01, Bin0011Bullets.std0001
             		);
 			localizedName = "turret0000";
             		spread = 4f;
@@ -77,8 +77,8 @@ public class Bin0011Blocks implements ContentList {
         	turret0001 = new ItemTurret("turret0001"){{
             		requirements(Category.turret, with(Bin0011Items.item00, 32, Bin0011Items.item01, 15));
             		ammo(
-                		Bin0011Items.item00, Bullets.artilleryDense,
-                		Bin0011Items.item01, Bullets.artilleryHoming
+                		Bin0011Items.item00, Bin0011Bullets.art0000,
+                		Bin0011Items.item01, Bin0011Bullets.art0001
 			);
 			localizedName = "turret0001";
             		targetAir = false;
