@@ -82,9 +82,9 @@ public class Bin0011Blocks implements ContentList {
 			);
 			localizedName = "turret0001";
             		targetAir = false;
-            		reloadTime = 60f;
+            		reloadTime = 52f;
             		recoilAmount = 2f;
-           	 	range = 192f;
+           	 	range = 240f;
             		inaccuracy = 0.5f;
             		shootCone = 10f;
             		health = 260;
