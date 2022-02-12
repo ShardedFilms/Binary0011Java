@@ -1,6 +1,6 @@
 # Binary 0011
 
-an example of a simple java mod for mindustry v7, "java port" and rework of my mod "binary0011"
+an example of a simple java mod for mindustry v7.
 
 ## Building for Desktop Testing
 
