@@ -4,7 +4,7 @@ import arc.graphics.Color;
 import mindustry.ctype.ContentList;
 import mindustry.type.Item;
 
-public class AbyssItems implements ContentList {
+public class Bin0011Items implements ContentList {
 	public static Item 
 		item00,
 		item01, item10, item11;
