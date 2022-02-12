@@ -72,13 +72,13 @@ public class Bin0011Blocks implements ContentList {
            	 	inaccuracy = 2f;
            		rotateSpeed = 10f;
 
-            		limitRange();
+            		limitRange(0f);
         	}};
         	turret0001 = new ItemTurret("turret0001"){{
             		requirements(Category.turret, with(Bin0011Items.item00, 32, Bin0011Items.item01, 15));
             		ammo(
-                		Bin0011Items.item00, Bin0011Bullets.art0000,
-                		Bin0011Items.item01, Bin0011Bullets.art0001
+				Bin0011Items.item00, Bin0011Bullets.art0000,
+				Bin0011Items.item01, Bin0011Bullets.art0001
 			);
 			localizedName = "turret0001";
             		targetAir = false;
