@@ -52,10 +52,10 @@ public class Bin0011Blocks implements ContentList {
 			health = 1600;
 		}};
 		turret0000 = new ItemTurret("turret0000"){{
-            requirements(Category.turret, with(Bin0011Items.item00, 28), true);
+			requirements(Category.turret, with(Bin0011Items.item00, 28), true);
             ammo(
-               	Bin0011Items.item00, Bullets.standardCopper,
-               	Bin0011Items.item01, Bullets.standardHoming
+				Bin0011Items.item00, Bullets.standardCopper,
+				Bin0011Items.item01, Bullets.standardHoming
             );
             spread = 4f;
            	shots = 2;
