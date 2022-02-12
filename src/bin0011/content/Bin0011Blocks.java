@@ -41,6 +41,7 @@ public class Bin0011Blocks implements ContentList {
 			requirements(Category.defense, with(
 				Bin0011Items.item00, 6
 			));
+			localizedName = "wall00";
 			size = 1;
 			health = 400;
 		}};
@@ -48,6 +49,7 @@ public class Bin0011Blocks implements ContentList {
 			requirements(Category.defense, with(
 				Bin0011Items.item00, 12
 			));
+			localizedName = "wallLarge00";
 			size = 2;
 			health = 1600;
 		}};
@@ -57,6 +59,7 @@ public class Bin0011Blocks implements ContentList {
 				Bin0011Items.item00, Bullets.standardCopper,
 				Bin0011Items.item01, Bullets.standardHoming
             		);
+			localizedName = "turret0000";
             		spread = 4f;
            		shots = 2;
           		alternate = true;
@@ -77,6 +80,7 @@ public class Bin0011Blocks implements ContentList {
                 		Bin0011Items.item00, Bullets.artilleryDense,
                 		Bin0011Items.item01, Bullets.artilleryHoming
 			);
+			localizedName = "turret0001";
             		targetAir = false;
             		reloadTime = 60f;
             		recoilAmount = 2f;
