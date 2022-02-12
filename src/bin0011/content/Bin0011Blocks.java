@@ -29,7 +29,7 @@ import static mindustry.type.ItemStack.with;
 public class Bin0011Blocks implements ContentList {
 	public static Block 
 		// walls
-		wall00;
+		wall00, wallLarge00;
 
 	@Override
 	public void load() {
@@ -38,7 +38,14 @@ public class Bin0011Blocks implements ContentList {
 				Bin0011Items.item00, 6
 			));
 			size = 1;
-			health = 1000;
+			health = 400;
+		}};
+		wallLarge00 = new Wall("wall-large00") {{
+			requirements(Category.defense, with(
+				Bin0011Items.item00, 12
+			));
+			size = 2;
+			health = 1600;
 		}};
 	}
 }
