@@ -1,4 +1,4 @@
-package abyss.content;
+package bin0011.content;
 
 import arc.graphics.Color;
 import mindustry.ctype.ContentList;
