@@ -33,7 +33,7 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00,
 		// turrets
-		turret0000;
+		turret0000, turret0001;
 
 	@Override
 	public void load() {
