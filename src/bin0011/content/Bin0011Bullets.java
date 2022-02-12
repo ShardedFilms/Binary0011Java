@@ -17,24 +17,6 @@ public class Bin0011Bullets implements ContentList{
 
 	@Override
 	public void load(){
-		// reg standard
-		std0000 = new BasicBulletType(2.5f, 12, "bullet"){{
-            		width = 7f;
-            		height = 9f;
-            		lifetime = 75f;
-            		shootEffect = Fx.shootSmall;
-            		smokeEffect = Fx.shootSmallSmoke;
-            		ammoMultiplier = 2;
-        	}};
-		std0001 = new BasicBulletType(3f, 16, "bullet"){{
-            		width = 7f;
-            		height = 9f;
-            		homingPower = 0.5f;
-            		reloadMultiplier = 3.5f;
-            		ammoMultiplier = 5;
-            		lifetime = 75f;
-        	}};
-		// end reg
 		// reg artillery
         	art0000 = new ArtilleryBulletType(3f, 23, "shell"){{
             		hitEffect = Fx.flakExplosion;
@@ -59,5 +41,22 @@ public class Bin0011Bullets implements ContentList{
             		homingRange = 50f;
         	}};
 		// end reg
+		// reg standard
+		std0000 = new BasicBulletType(2.5f, 12, "bullet"){{
+            		width = 7f;
+            		height = 9f;
+            		lifetime = 75f;
+            		shootEffect = Fx.shootSmall;
+            		smokeEffect = Fx.shootSmallSmoke;
+            		ammoMultiplier = 2;
+        	}};
+		std0001 = new BasicBulletType(3f, 16, "bullet"){{
+            		width = 7f;
+            		height = 9f;
+            		homingPower = 0.5f;
+            		reloadMultiplier = 3.5f;
+            		ammoMultiplier = 5;
+            		lifetime = 75f;
+        	}};
 	}
 }
