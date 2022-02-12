@@ -91,6 +91,37 @@ public class Bin0011Blocks implements ContentList {
             		shootSound = Sounds.bang;
             		limitRange(0f);
         	}};
+		turret0010 = new PowerTurret("turret0010"){{
+			requirements(Category.turret, with(Bin0011Items.item00, 75, Bin0011Items.item01, 45, Bin0011Items.item10, 30));
+            		range = 192f;
+            		chargeTime = 40f;
+            		chargeMaxDelay = 25f;
+            		chargeEffects = 9;
+            		recoilAmount = 1.5f;
+            		reloadTime = 50f;
+            		cooldown = 0.05f;
+            		powerUse = 4.7f;
+            		shootShake = 2f;
+            		shootEffect = Fx.lancerLaserShoot;
+            		smokeEffect = Fx.none;
+            		chargeEffect = Fx.lancerLaserCharge;
+            		chargeBeginEffect = Fx.lancerLaserChargeBegin;
+            		size = 2;
+            		health = 290 * size * size;
+            		targetAir = true;
+            		shootSound = Sounds.laser;
+			
+			shootType = new LaserBulletType(140){{
+                		colors = new Color[]{Pal.lancerLaser.cpy().a(0.4f), Pal.lancerLaser, Color.white};
+                		hitEffect = Fx.hitLancer;
+                		hitSize = 4;
+                		lifetime = 16f;
+                		drawSize = 400f;
+                		collidesAir = false;
+                		length = 192f;
+                		ammoMultiplier = 2f;
+            		}};
+        	}};
 	}
 }
 
