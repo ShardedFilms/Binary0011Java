@@ -1,8 +1,8 @@
-displayName: "Project Abyss"
-name: "abyss"
-author: "Uujuju"
-main: "abyss.ProjectAbyss"
-description: "A Mindustry Java mod that im working on."
-version: 0.4
+displayName: "Binary 0011"
+name: "binary0011"
+author: "1237"
+main: "bin0011.bin0011"
+description: "0011"
+version: 0.0.0
 minGameVersion: 135
 java: true
