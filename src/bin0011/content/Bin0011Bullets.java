@@ -18,7 +18,7 @@ public class Bin0011Bullets implements ContentList{
     @Override
     public void load(){
     	// reg standard
-		std0000 = new BasicBulletType(2.5f, 12){{
+	std0000 = new BasicBulletType(2.5f, 12){{
             width = 7f;
             height = 9f;
             lifetime = 75f;
@@ -26,7 +26,7 @@ public class Bin0011Bullets implements ContentList{
             smokeEffect = Fx.shootSmallSmoke;
             ammoMultiplier = 2;
         }};
-		std0001 = new BasicBulletType(3f, 16, "bullet"){{
+	std0001 = new BasicBulletType(3f, 16, "bullet"){{
             width = 7f;
             height = 9f;
             homingPower = 0.5f;
