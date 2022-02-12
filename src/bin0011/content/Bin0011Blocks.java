@@ -28,8 +28,12 @@ import static mindustry.type.ItemStack.with;
 
 public class Bin0011Blocks implements ContentList {
 	public static Block 
-		// walls
-		wall00, wallLarge00;
+		
+		
+		// defense
+		wall00, wallLarge00,
+		// turrets
+		turret0000;
 
 	@Override
 	public void load() {
@@ -47,5 +51,26 @@ public class Bin0011Blocks implements ContentList {
 			size = 2;
 			health = 1600;
 		}};
+		turret0000 = new ItemTurret("turret0000"){{
+            		requirements(Category.turret, with(Bin0011Items.item00, 28), true);
+            		ammo(
+                		Bin0011Items.item00, Bullets.standardCopper,
+                		Bin0011Items.item01, Bullets.standardHoming
+            		);
+
+            		spread = 4f;
+            		shots = 2;
+            		alternate = true;
+            		reloadTime = 17.5f;
+            		restitution = 0.03f;
+            		range = 110;
+            		shootCone = 15f;
+            		ammoUseEffect = Fx.casing1;
+            		health = 250;
+            		inaccuracy = 2f;
+            		rotateSpeed = 10f;
+
+            		limitRange();
+        	}};
 	}
 }
