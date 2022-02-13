@@ -164,15 +164,24 @@ public class Bin0011Blocks implements ContentList {
 
 		// end turret
 		// reg production
-        	crft0000 = new GenericCrafter("crft0000"){{
-            		requirements(Category.crafting, with(Items.copper, 45, Items.lead, 40));
-            		craftEffect = Fx.pulverizeMedium;
-            		outputItem = new ItemStack(Bin0011Items.item00, 1);
-            		craftTime = 60f;
-            		size = 2;
-            		hasItems = true;
-            		consumes.item(Items.copper, 2, Items.coal, 1);
-        	}};
+		crft0000 = new GenericCrafter("crft0000") {{
+			requirements(Category.crafting, with(
+				Items.copper, 60,
+				Items.lead, 35,
+			));
+			size = 2;
+			health = 280 * size * size;
+			itemCapacity = 50;
+			craftTime = 60f;
+			craftEffect = Fx.smelt;
+			drawer = new DrawSmelter(Color.valueOf("FFFFFF"));
+			consumes.items(with(
+				Items.copper, 2,
+				Items.coal, 1
+			));
+			consumes.power(1.2f);
+			outputItem = new ItemStack(Bin0011Items.item00, 1);
+		}};
 		// end production
 	}
 }
