@@ -140,23 +140,24 @@ public class Bin0011Blocks implements ContentList {
             		range = 240f;
             		reloadTime = 90f;
             		firingMoveFract = 0.5f;
-           		shootDuration = 240f;
+           		shootDuration = 480f;
             		powerUse = 5f;
             		shootSound = Sounds.laserbig;
             		loopSound = Sounds.beam;
             		loopSoundVolume = 2f;
 
             		shootType = new ContinuousLaserBulletType(20){{
-                		length = 240f;
+                		colors = new Color[]{Pal.darkestGray.a(1f), Pal.darkerGray, Pal.darkishGray, Color.white};
+				length = 240f;
                 		hitEffect = Fx.hitMeltdown;
                 		hitColor = Pal.gray;
-                		status = StatusEffects.electrified;
+                		status = StatusEffects.shocked;
                 		drawSize = 420f;
 
                 		incendChance = 1f;
                 		incendSpread = 7f;
                 		incendAmount = 2;
-                		ammoMultiplier = 2f;
+                		ammoMultiplier = 3f;
             		}};
 
             		health = 225 * size * size;
