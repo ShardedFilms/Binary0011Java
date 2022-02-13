@@ -158,8 +158,8 @@ public class Bin0011Blocks implements ContentList {
                 		ammoMultiplier = 2f;
             		}};
 
-            	health = 225 * size * size;
-            	consumes.add(new ConsumeCoolant(0.2f)).update(false);
+            		health = 225 * size * size;
+            		consumes.add(new ConsumeCoolant(0.2f)).update(false);
         	}};
 
 		// end turret
