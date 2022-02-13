@@ -1,4 +1,4 @@
-# Binary 0011
+# Binary0011
 
 an example of a simple java mod for mindustry v7.
 
