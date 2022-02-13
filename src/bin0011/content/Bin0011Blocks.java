@@ -152,16 +152,13 @@ public class Bin0011Blocks implements ContentList {
                 		hitEffect = Fx.hitMeltdown;
                 		hitColor = Pal.gray;
                 		status = StatusEffects.shocked;
-                		drawSize = 420f;
+                		drawSize = 32f;
 
                 		incendChance = 1f;
                 		incendSpread = 7f;
                 		incendAmount = 2;
-                		ammoMultiplier = 3f;
             		}};
-
             		health = 225 * size * size;
-  			consumes.power(4.5f);
         	}};
 
 		// end turret
@@ -171,7 +168,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.copper, 60,
 				Items.lead, 35
 			));
-			size = 2;
+			size = 3;
 			health = 280 * size * size;
 			itemCapacity = 50;
 			craftTime = 60f;
