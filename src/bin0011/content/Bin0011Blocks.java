@@ -160,7 +160,7 @@ public class Bin0011Blocks implements ContentList {
             		}};
 
             		health = 225 * size * size;
-            		consumes.add(new ConsumeCoolant(0.2f)).update(false);
+  			consumes.power(4.5f);
         	}};
 
 		// end turret
