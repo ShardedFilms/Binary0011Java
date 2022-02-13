@@ -102,17 +102,17 @@ public class Bin0011Blocks implements ContentList {
             		cooldown = 0.05f;
             		powerUse = 4.7f;
             		shootShake = 2f;
-            		shootEffect = Fx.lancerLaserShoot;
-            		smokeEffect = Fx.none;
-            		chargeEffect = Fx.lancerLaserCharge;
-            		chargeBeginEffect = Fx.lancerLaserChargeBegin;
+            		shootEffect = Fx.shootBig;
+            		smokeEffect = Fx.smokeCloud;
+            		chargeEffect = Fx.none;
+            		chargeBeginEffect = Fx.none;
             		size = 2;
             		health = 290 * size * size;
             		targetAir = true;
             		shootSound = Sounds.laser;
 			
 			shootType = new LaserBulletType(140){{
-                		colors = new Color[]{Pal.darkerGray.a(0.4f), Pal.darkishGray, Color.white};
+                		colors = new Color[]{Pal.darkestGray.a(1f), Pal.darkishGray, Color.white};
                 		hitEffect = Fx.hitLancer;
                 		hitSize = 6;
                 		lifetime = 18f;
