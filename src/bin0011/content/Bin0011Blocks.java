@@ -130,7 +130,7 @@ public class Bin0011Blocks implements ContentList {
             		}};
         	}};
         	turret0011 = new LaserTurret("turret0011"){{
-            		requirements(Category.turret, with(Bin0011Items.item00, 75, Bin0011Items.item01, 65, Bin0011Items.item10, 35);
+            		requirements(Category.turret, with(Bin0011Items.item00, 75, Bin0011Items.item01, 65, Bin0011Items.item10, 35));
             		shootEffect = Fx.shootBigSmoke2;
             		shootCone = 40f;
             		recoilAmount = 1f;
