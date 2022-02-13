@@ -167,7 +167,7 @@ public class Bin0011Blocks implements ContentList {
 		crft0000 = new GenericCrafter("crft0000") {{
 			requirements(Category.crafting, with(
 				Items.copper, 60,
-				Items.lead, 35,
+				Items.lead, 35
 			));
 			size = 2;
 			health = 280 * size * size;
