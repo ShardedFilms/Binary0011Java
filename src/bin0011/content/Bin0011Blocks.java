@@ -112,12 +112,12 @@ public class Bin0011Blocks implements ContentList {
             		shootSound = Sounds.laser;
 			
 			shootType = new LaserBulletType(140){{
-                		colors = new Color[]{Pal.darkerGray.cpy().a(0.4f), Pal.darkishGray, Color.white};
+                		colors = new Color[]{Pal.darkerGray.a(0.4f), Pal.darkishGray, Color.white};
                 		hitEffect = Fx.hitLancer;
-                		hitSize = 4;
-                		lifetime = 16f;
+                		hitSize = 6;
+                		lifetime = 18f;
                 		drawSize = 400f;
-                		collidesAir = false;
+                		collidesAir = true;
                 		length = 192f;
                 		ammoMultiplier = 2f;
             		}};
