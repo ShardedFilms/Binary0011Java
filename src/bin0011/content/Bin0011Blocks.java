@@ -162,7 +162,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.coal, 1
 			));
 			consumes.power(1.2f);
-			outputItem = new ItemStack(Bin0011Items.item00, 1);
+			outputItem = new ItemStack(Bin0011Items.item00, 2);
 		}};
 		crft0001 = new GenericCrafter("crft0001") {{
 			requirements(Category.crafting, with(
@@ -182,7 +182,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.lead, 1
 			));
 			consumes.power(1.3f);
-			outputItem = new ItemStack(Bin0011Items.item01, 1);
+			outputItem = new ItemStack(Bin0011Items.item01, 2);
 		}};
 		// end production
 	}
