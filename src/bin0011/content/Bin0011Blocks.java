@@ -36,7 +36,7 @@ public class Bin0011Blocks implements ContentList {
 		// turrets
 		turret0000, turret0001, turret0010, turret0011,
 		// production
-		crft0000;
+		crft0000, crft0001;
 
 	@Override
 	public void load() {
@@ -163,6 +163,26 @@ public class Bin0011Blocks implements ContentList {
 			));
 			consumes.power(1.2f);
 			outputItem = new ItemStack(Bin0011Items.item00, 1);
+		}};
+		crft0001 = new GenericCrafter("crft0001") {{
+			requirements(Category.crafting, with(
+				Items.copper, 45,
+				Items.lead, 25,
+				Items.silicon, 15
+			));
+			size = 3;
+			health = 290 * size * size;
+			itemCapacity = 50;
+			craftTime = 60f;
+			craftEffect = Fx.smelt;
+			drawer = new DrawSmelter(Color.valueOf("FFFFFF"));
+			consumes.items(with(
+				Items.copper, 2,
+				Items.metaglass, 1
+				Items.lead, 1
+			));
+			consumes.power(1.3f);
+			outputItem = new ItemStack(Bin0011Items.item01, 1);
 		}};
 		// end production
 	}
