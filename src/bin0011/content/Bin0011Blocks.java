@@ -130,37 +130,20 @@ public class Bin0011Blocks implements ContentList {
                 		ammoMultiplier = 2f;
             		}};
         	}};
-        	turret0011 = new LaserTurret("turret0011"){{
-            		requirements(Category.turret, with(Bin0011Items.item00, 75, Bin0011Items.item01, 65, Bin0011Items.item10, 35));
-            		shootEffect = Fx.shootBigSmoke2;
-            		shootCone = 40f;
-            		recoilAmount = 1f;
+        	turret0011 = new TractorBeamTurret("turret0011"){{
+            		requirements(Category.turret, with(Items.silicon, 120, Items.titanium, 90, Items.graphite, 30));
+
+            		hasPower = true;
             		size = 2;
-            		shootShake = 2f;
-            		range = 240f;
-            		reloadTime = 90f;
-            		firingMoveFract = 0.5f;
-           		shootDuration = 480f;
-            		powerUse = 5f;
-            		shootSound = Sounds.laserbig;
-            		loopSound = Sounds.beam;
-            		loopSoundVolume = 2f;
+            		force = 24f;
+            		scaledForce =12f;
+            		range = 360f;
+            		damage = 1f;
+            		health = 160 * size * size;
+            		rotateSpeed = 10;
 
-            		shootType = new ContinuousLaserBulletType(20){{
-                		colors = new Color[]{Pal.darkestGray.a(1f), Pal.darkerGray, Pal.darkishGray, Color.white};
-				length = 240f;
-                		hitEffect = Fx.hitMeltdown;
-                		hitColor = Pal.gray;
-                		status = StatusEffects.shocked;
-                		drawSize = 32f;
-
-                		incendChance = 1f;
-                		incendSpread = 7f;
-                		incendAmount = 2;
-            		}};
-            		health = 225 * size * size;
-        	}};
-
+            		consumes.powerCond(3.5f, (TractorBeamBuild e) -> e.target != null);
+		}};
 		// end turret
 		// reg production
 		crft0000 = new GenericCrafter("crft0000") {{
