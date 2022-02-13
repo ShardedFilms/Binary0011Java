@@ -33,10 +33,13 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00,
 		// turrets
-		turret0000, turret0001, turret0010;
+		turret0000, turret0001, turret0010, turret0011,
+		// production
+		crft0000;
 
 	@Override
 	public void load() {
+		// reg defense
 		wall00 = new Wall("wall00") {{
 			requirements(Category.defense, with(
 				Bin0011Items.item00, 6
@@ -53,11 +56,14 @@ public class Bin0011Blocks implements ContentList {
 			size = 2;
 			health = 1600;
 		}};
+		// end defense
+		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 28), true);
             		ammo(
 				Bin0011Items.item00, Bullets.standardCopper,
-				Bin0011Items.item01, Bullets.standardHoming
+				Bin0011Items.item01, Bullets.standardHoming,
+				Bin0011Items.item11, Bullets.missileSurge
             		);
 			localizedName = "turret0000";
             		spread = 4f;
@@ -93,7 +99,8 @@ public class Bin0011Blocks implements ContentList {
         	}};
 		turret0010 = new PowerTurret("turret0010"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 75, Bin0011Items.item01, 45, Bin0011Items.item10, 30));
-            		range = 192f;
+            		localizedName = "turret0010";
+			range = 192f;
             		chargeTime = 40f;
             		chargeMaxDelay = 25f;
             		chargeEffects = 9;
@@ -122,6 +129,51 @@ public class Bin0011Blocks implements ContentList {
                 		ammoMultiplier = 2f;
             		}};
         	}};
+        	turret0011 = new LaserTurret("turret0011"){{
+            		requirements(Category.turret, with(Bin0011Items.item00, 75, Bin0011Items.item01, 65, Bin0011Items.item10, 35);
+            		shootEffect = Fx.shootBigSmoke2;
+            		shootCone = 40f;
+            		recoilAmount = 1f;
+            		size = 2;
+            		shootShake = 2f;
+            		range = 240f;
+            		reloadTime = 90f;
+            		firingMoveFract = 0.5f;
+           		shootDuration = 240f;
+            		powerUse = 5f;
+            		shootSound = Sounds.laserbig;
+            		loopSound = Sounds.beam;
+            		loopSoundVolume = 2f;
+
+            		shootType = new ContinuousLaserBulletType(20){{
+                		length = 240f;
+                		hitEffect = Fx.hitMeltdown;
+                		hitColor = Pal.gray;
+                		status = StatusEffects.electrified;
+                		drawSize = 420f;
+
+                		incendChance = 1f;
+                		incendSpread = 7f;
+                		incendAmount = 2;
+                		ammoMultiplier = 2f;
+            		}};
+
+            	health = 225 * size * size;
+            	consumes.add(new ConsumeCoolant(0.2f)).update(false);
+        	}};
+
+		// end turret
+		// reg production
+        	crft0000 = new GenericCrafter("crft0000"){{
+            		requirements(Category.crafting, with(Items.copper, 45, Items.lead, 40));
+            		craftEffect = Fx.pulverizeMedium;
+            		outputItem = new ItemStack(Bin0011Items.item00, 1);
+            		craftTime = 60f;
+            		size = 2;
+            		hasItems = true;
+            		consumes.item(Items.copper, 2, Items.coal, 1);
+        	}};
+		// end production
 	}
 }
 
