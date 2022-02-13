@@ -178,7 +178,7 @@ public class Bin0011Blocks implements ContentList {
 			drawer = new DrawSmelter(Color.valueOf("FFFFFF"));
 			consumes.items(with(
 				Items.copper, 2,
-				Items.metaglass, 1
+				Items.metaglass, 1,
 				Items.lead, 1
 			));
 			consumes.power(1.3f);
