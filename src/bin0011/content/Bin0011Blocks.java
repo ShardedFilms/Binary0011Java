@@ -32,7 +32,7 @@ public class Bin0011Blocks implements ContentList {
 		
 		
 		// defense
-		wall00, wallLarge00,
+		wall00, wallLarge00, wall01, wallLarge01,
 		// turrets
 		turret0000, turret0001, turret0010, turret0011,
 		// production
@@ -56,6 +56,26 @@ public class Bin0011Blocks implements ContentList {
 			localizedName = "wallLarge00";
 			size = 2;
 			health = 1600;
+		}};
+		wall01 = new Wall("wall01") {{
+			requirements(Category.defense, with(
+				Bin0011Items.item01, 6
+			));
+			localizedName = "wall01";
+			size = 1;
+			health = 500;
+			insulated = true;
+			absorbsLasers = true;
+		}};
+		wallLarge01 = new Wall("wall-large01") {{
+			requirements(Category.defense, with(
+				Bin0011Items.item01, 12
+			));
+			localizedName = "wallLarge01";
+			size = 2;
+			health = 2500;
+			insulated = true;
+			absorbLasers = true;
 		}};
 		// end defense
 		// reg turret
@@ -133,6 +153,7 @@ public class Bin0011Blocks implements ContentList {
         	turret0011 = new TractorBeamTurret("turret0011"){{
             		requirements(Category.turret, with(Items.silicon, 120, Items.titanium, 90, Items.graphite, 30));
 
+			localizedName = "turret0011";
             		hasPower = true;
             		size = 2;
             		force = 24f;
@@ -152,6 +173,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.lead, 35
 			));
 			size = 3;
+			localizedName = "crft0000";
 			health = 280 * size * size;
 			itemCapacity = 50;
 			craftTime = 60f;
@@ -171,6 +193,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.silicon, 15
 			));
 			size = 3;
+			localizedName = "crft0001";
 			health = 290 * size * size;
 			itemCapacity = 50;
 			craftTime = 60f;
