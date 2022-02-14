@@ -1,6 +1,6 @@
-# Binary0011
+# Binary0011 Java
 
-an example of a simple java mod for mindustry v7.
+an example of a simple java mod for mindustry v7. the way you can compile/implement is in the text below.
 
 ## Building for Desktop Testing
 
