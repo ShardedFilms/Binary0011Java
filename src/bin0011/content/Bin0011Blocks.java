@@ -65,7 +65,7 @@ public class Bin0011Blocks implements ContentList {
 			size = 1;
 			health = 500;
 			insulated = true;
-			absorbsLasers = true;
+			absorbLasers = true;
 		}};
 		wallLarge01 = new Wall("wall-large01") {{
 			requirements(Category.defense, with(
