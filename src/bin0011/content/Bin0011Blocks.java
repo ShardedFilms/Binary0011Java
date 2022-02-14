@@ -151,7 +151,7 @@ public class Bin0011Blocks implements ContentList {
             		}};
         	}};
         	turret0011 = new TractorBeamTurret("turret0011"){{
-            		requirements(Category.turret, with(Items.silicon, 120, Items.titanium, 90, Items.graphite, 30));
+            		requirements(Category.turret, with(Bin0011Items.item00, 100, Bin0011Items.item01, 70, Bin0011Items.item10, 45));
 
 			localizedName = "turret0011";
             		hasPower = true;
