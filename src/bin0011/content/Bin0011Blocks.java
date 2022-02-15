@@ -82,21 +82,21 @@ public class Bin0011Blocks implements ContentList {
 		// end defense
 		// reg power
         	node000 = new PowerNode("node000"){{
-            		requirements(Category.power, with(Bin0011Items.item00, 1, Bin0011Items.item01, 1));
-            		maxNodes = 25;
-            		laserRange = 12;
+			requirements(Category.power, with(Bin0011Items.item00, 1, Bin0011Items.item01, 1));
+			maxNodes = 25;
+			laserRange = 12;
 			localizedName = "node000";
         	}};
         	node001 = new PowerNode("node001"){{
-            		requirements(Category.power, with(Bin0011Items.item00, 4, Bin0011Items.item01, 4, Bin0011Items.item10, 1));
-            		maxNodes = 35;
-            		laserRange = 120;
+			requirements(Category.power, with(Bin0011Items.item00, 4, Bin0011Items.item01, 4, Bin0011Items.item10, 1));
+			maxNodes = 35;
+			laserRange = 120;
 			size = 2;
 			localizedName = "node001";
         	}};
 		// end power
 		// reg turret
-		turret0000 = new ItemTurret("turret0000"){{
+		turret0000 = new Itemturret("turret0000"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 28), true);
             		ammo(
 				Bin0011Items.item00, Bullets.standardCopper,
