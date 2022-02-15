@@ -22,6 +22,7 @@ import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.meta.*;
 import mindustry.world.draw.*;
 import mindustry.*;
+import mindustry.content.*;
 
 import bin0011.content.*;
 
@@ -29,7 +30,6 @@ import static mindustry.type.ItemStack.with;
 
 public class Bin0011Blocks implements ContentList {
 	public static Block 
-		
 		
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
@@ -81,16 +81,16 @@ public class Bin0011Blocks implements ContentList {
 		}};
 		// end defense
 		// reg power
-        	node000 = new PowerNode("node000"){{
+		node000 = new PowerNode("node000"){{
 			requirements(Category.power, with(Bin0011Items.item00, 1, Bin0011Items.item01, 1));
 			maxNodes = 25;
 			laserRange = 12;
 			localizedName = "node000";
         	}};
-        	node001 = new PowerNode("node001"){{
+		node001 = new PowerNode("node001"){{
 			requirements(Category.power, with(Bin0011Items.item00, 4, Bin0011Items.item01, 4, Bin0011Items.item10, 1));
 			maxNodes = 35;
-			laserRange = 120;
+			laserRange = 120f;
 			size = 2;
 			localizedName = "node001";
         	}};
