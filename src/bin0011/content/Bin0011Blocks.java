@@ -89,8 +89,8 @@ public class Bin0011Blocks implements ContentList {
         	}};
         	node001 = new PowerNode("node001"){{
             		requirements(Category.power, with(Bin0011Items.item00, 4, Bin0011Items.item01, 4, Bin0011Items.item10, 1));
-            		maxNodes = 25;
-            		laserRange = 12;
+            		maxNodes = 35;
+            		laserRange = 120;
 			size = 2;
 			localizedName = "node001";
         	}};
