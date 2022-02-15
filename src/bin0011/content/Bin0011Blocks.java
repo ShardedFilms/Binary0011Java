@@ -22,7 +22,7 @@ import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.meta.*;
 import mindustry.world.draw.*;
 import mindustry.*;
-import mindustry.type.*
+import mindustry.type.*;
 
 import bin0011.content.*;
 
