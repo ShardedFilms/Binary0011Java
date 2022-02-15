@@ -81,14 +81,13 @@ public class Bin0011Blocks implements ContentList {
 		}};
 		// end defense
 		// reg power
-		node000 = new PowerNode("node000") {{
-			requirements(Category.power, with(
-				Bin0011Items.item01, 1,
-				Bin0011Items.item10, 2
-			));
-			localizedName = "node00";
-			laserRange = 20f;
-			maxNodes = 25;
+		node000 = new PowerNode("node000"){{
+			requirements(Category.power, BuildVisibility.shown, ItemStack.with(Bin0011Items.item00, 1, Bin0011Items.item01, 2));
+			Bin0011TechTree.add(Blocks.powerNodeL, this);
+			size = 1;
+			maxNodes = 17;
+			laserRange = 15F;
+			health = 125;
 		}};
 		// end power
 		// reg turret
