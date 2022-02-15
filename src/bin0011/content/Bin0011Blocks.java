@@ -22,6 +22,7 @@ import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.meta.*;
 import mindustry.world.draw.*;
 import mindustry.*;
+import mindustry.type.*
 
 import bin0011.content.*;
 
@@ -81,9 +82,8 @@ public class Bin0011Blocks implements ContentList {
 		}};
 		// end defense
 		// reg power
-		node000 = new PowerNode("node000"){{
-			requirements(Category.power, BuildVisibility.shown, ItemStack.with(Bin0011Items.item00, 1, Bin0011Items.item01, 2));
-			Bin0011TechTree.add(Blocks.powerNodeL, this);
+		node000 = new PowerNode("node000") {{
+			requirements(Category.power, with(Bin0011Items.item00, 1, Bin0011Items.item01, 2));
 			size = 1;
 			maxNodes = 17;
 			laserRange = 15F;
