@@ -34,8 +34,6 @@ public class Bin0011Blocks implements ContentList {
 		
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
-		// power
-		node000,
 		// turrets
 		turret0000, turret0001, turret0010, turret0011,
 		// production
@@ -81,15 +79,6 @@ public class Bin0011Blocks implements ContentList {
 			absorbLasers = true;
 		}};
 		// end defense
-		// reg power
-		node000 = new PowerNode("node000") {{
-			requirements(Category.power, with(Bin0011Items.item00, 1, Bin0011Items.item01, 2));
-			size = 1;
-			maxNodes = 17;
-			laserRange = 15F;
-			health = 125;
-		}};
-		// end power
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 28), true);
