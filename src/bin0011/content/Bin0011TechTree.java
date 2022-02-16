@@ -8,7 +8,7 @@ import mindustry.ctype.UnlockableContent;
 import mindustry.game.Objectives.*;
 import mindustry.type.ItemStack;
 
-public class AbyssTechTree implements ContentList {
+public class Bin0011TechTree implements ContentList {
 	static TechTree.TechNode context = null;
 
 	private static void extendNode (UnlockableContent parent, Runnable children) {
@@ -91,9 +91,9 @@ public class AbyssTechTree implements ContentList {
 
 		extendNode(Blocks.titaniumWall, () -> {
 			node(Bin0011Blocks.wall00, () -> {
-				node(AbyssBlocks.wallLarge00, () -> {
-					node(AbyssBlocks.wall01);
-					node(AbyssBlocks.wallLarge01);
+				node(Bin0011Blocks.wallLarge00, () -> {
+					node(Bin0011Blocks.wall01);
+					node(Bin0011Blocks.wallLarge01);
 				});
 			});
 		});
@@ -103,10 +103,7 @@ public class AbyssTechTree implements ContentList {
 		});
 		extendNode(Blocks.lancer, () -> {
 			node(Bin0011Blocks.turret0010);
-
 			node(Bin0011Blocks.turret0011);
 		});
 	}
-
-
 }
