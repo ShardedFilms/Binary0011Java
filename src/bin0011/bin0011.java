@@ -18,7 +18,7 @@ public class bin0011 extends Mod{
 	public void loadContent(){
 		new Bin0011Items().load();
 		new Bin0011Blocks().load();
-//		new Bin0011TechTree().load();
+		new Bin0011TechTree().load();
 //		new Bin0011Bullets().load();
 	}
 }
