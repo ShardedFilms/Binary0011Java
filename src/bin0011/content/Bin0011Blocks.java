@@ -96,7 +96,7 @@ public class Bin0011Blocks implements ContentList {
 			localizedName = "gen0000";
 			health = 750;
 			powerProduction = 7.5f;
-			itemduration = 240f;
+			itemDuration = 240f;
 			hasItems = true;
 			size = 2;
 			ambientSound = Sounds.steam;
