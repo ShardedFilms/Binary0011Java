@@ -83,7 +83,7 @@ public class Bin0011Blocks implements ContentList {
 		// reg power
 		node000 = new PowerNode("node000") {{
 			requirements(Category.power, with(
-				Bin0011Items.item00, 1
+				Bin0011Items.item00, 1,
 				Bin0011Items.item01, 2
 			));
 			localizedName = "node000";
