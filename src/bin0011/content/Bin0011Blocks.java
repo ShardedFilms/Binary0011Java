@@ -102,7 +102,7 @@ public class Bin0011Blocks implements ContentList {
 			ambientSound = Sounds.steam;
 			ambientSoundVolume = 0.03f;
 
-			consumes.item(Bin0011Items.item10)
+			consumes.item(Bin0011Items.item10);
 		}};
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
