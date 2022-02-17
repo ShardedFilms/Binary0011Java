@@ -34,7 +34,7 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
-		node000,
+		node000, gen0000
 		// turrets
 		turret0000, turret0001, turret0010, turret0011,
 		// production
@@ -90,6 +90,19 @@ public class Bin0011Blocks implements ContentList {
 			health = 135;
 			maxNodes = 25;
 			laserRange = 19f;
+		}};
+		gen0000 = new SingleTypeGenerator("gen0000") {{
+			requirements(Category.power, with(Bin0011Items.item00, 60, Bin0011Items.item01, 45, Bin0011Items.item10, 30));
+			localizedName = "gen0000";
+			health = 750;
+			powerProduction = 7.5f;
+			itemduration = 240f;
+			hasItems = true;
+			size = 2;
+			ambientSound = Sounds.steam;
+			ambientSoundVolume = 0.03f;
+
+			consumes.item(Bin0011Items.item10)
 		}};
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
