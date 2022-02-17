@@ -23,6 +23,8 @@ public class Bin0011Items implements ContentList {
 		item10 = new Item("item10", Color.valueOf("B0BAC0")) {{
 			localizedName = "item10";
 			cost = 0;
+			explosiveness = 0.6f;
+			charge = 0.2f;
 		}};
 		item11 = new Item("item11", Color.valueOf("B0BAC0")) {{
 			localizedName = "item11";
