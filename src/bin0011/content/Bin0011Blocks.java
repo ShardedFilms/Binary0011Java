@@ -101,7 +101,7 @@ public class Bin0011Blocks implements ContentList {
 			size = 2;
 			ambientSound = Sounds.steam;
 			ambientSoundVolume = 0.03f;
-
+			heatColor = Color.valueOf("FFFFFF99");
 			consumes.item(Bin0011Items.item10);
 		}};
 		// reg turret
