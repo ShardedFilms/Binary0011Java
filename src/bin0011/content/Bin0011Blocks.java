@@ -12,6 +12,8 @@ import arc.math.geom.Vec2;
 import arc.util.Time;
 import arc.util.Tmp;
 import mindustry.content.*;
+import mindustry.ctype.*;
+import mindustry.content.*;
 import mindustry.ctype.ContentList;
 import mindustry.entities.Effect;
 import mindustry.entities.Lightning;
@@ -32,6 +34,7 @@ import mindustry.type.Category;
 import mindustry.type.ItemStack;
 import mindustry.type.LiquidStack;
 import mindustry.world.Block;
+import mindustry.world.blocks.*;
 import mindustry.world.blocks.defense.Door;
 import mindustry.world.blocks.defense.ForceProjector;
 import mindustry.world.blocks.defense.MendProjector;
@@ -65,9 +68,7 @@ import mindustry.world.draw.DrawBlock;
 import mindustry.world.draw.DrawMixer;
 import mindustry.world.draw.DrawSmelter;
 import mindustry.world.meta.Attribute;
-import mindustry.world.meta.BuildVisibility;
 import mindustry.world.meta.Stat;
-import mindustry.world.meta.StatUnit;
 
 import bin0011.content.*;
 
