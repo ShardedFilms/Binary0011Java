@@ -288,10 +288,10 @@ public class Bin0011Blocks implements ContentList {
 			outputItem = new ItemStack(Bin0011Items.item11, 2);
 		}};
 		// reg m i n i c r a f t e r s
-		mcrft0000 = new GenericCrafter("crft0001") {{
+		mcrft0000 = new GenericCrafter("mcrft0000") {{
 			requirements(Category.crafting, with(
 				Items.copper, 35,
-				Items.lead, 12,
+				Items.lead, 12
 			));
 			size = 2;
 			localizedName = "mcrft0000";
@@ -301,7 +301,7 @@ public class Bin0011Blocks implements ContentList {
 			craftEffect = Fx.smelt;
 			consumes.items(with(
 				Items.copper, 1,
-				Items.coal, 1,
+				Items.coal, 1
 			));
 			outputItem = new ItemStack(Bin0011Items.item00, 1);
 		}};
