@@ -95,7 +95,7 @@ public class Bin0011Blocks implements ContentList {
 			requirements(Category.power, with(Bin0011Items.item00, 60, Bin0011Items.item01, 45, Bin0011Items.item10, 30));
 			localizedName = "gen0000";
 			health = 750;
-			powerProduction = 7.5f;
+			powerProduction = 4.2f;
 			itemDuration = 240f;
 			hasItems = true;
 			size = 2;
@@ -103,6 +103,20 @@ public class Bin0011Blocks implements ContentList {
 			ambientSoundVolume = 0.03f;
 			heatColor = Color.valueOf("FFFFFF99");
 			consumes.item(Bin0011Items.item10);
+		}};
+		gen0001 = new SingleTypeGenerator("gen0000") {{
+			requirements(Category.power, with(Bin0011Items.item00, 60, Bin0011Items.item01, 45, Bin0011Items.item10, 30));
+			localizedName = "gen0001";
+			health = 750;
+			powerProduction = 7.5f;
+			itemDuration = 240f;
+			hasItems = true;
+			size = 2;
+			ambientSound = Sounds.steam;
+			ambientSoundVolume = 0.03f;
+			heatColor = Color.valueOf("FFFFFF66");
+			consumes.item(Bin0011Items.item10);
+			consumes.liquid(Liquids.water, 0.1f);
 		}};
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
