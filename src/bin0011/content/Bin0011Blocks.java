@@ -34,7 +34,7 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
-		node000, gen0000,
+		node000, gen0000, gen0001,
 		// turrets
 		turret0000, turret0001, turret0010, turret0011,
 		// production
@@ -104,10 +104,10 @@ public class Bin0011Blocks implements ContentList {
 			heatColor = Color.valueOf("FFFFFF99");
 			consumes.item(Bin0011Items.item10);
 		}};
-		gen0001 = new SingleTypeGenerator("gen0000") {{
+		gen0001 = new SingleTypeGenerator("gen0001") {{
 			requirements(Category.power, with(Bin0011Items.item00, 75, Bin0011Items.item01, 60, Bin0011Items.item10, 35, Bin0011Items.item11, 40));
 			localizedName = "gen0001";
-			health = 750;
+			health = 900;
 			powerProduction = 7.5f;
 			itemDuration = 240f;
 			hasItems = true;
