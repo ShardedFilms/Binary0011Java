@@ -111,6 +111,7 @@ public class Bin0011Blocks implements ContentList {
 			powerProduction = 7.5f;
 			itemDuration = 240f;
 			hasItems = true;
+			hasLiquids = true;
 			size = 2;
 			ambientSound = Sounds.steam;
 			ambientSoundVolume = 0.03f;
