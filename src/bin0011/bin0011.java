@@ -13,12 +13,13 @@ import bin0011.content.*;
 
 public class bin0011 extends Mod{
 	public bin0011(){}
-	// tech tree dihapus untuk sementara waktu
+	// load mod content
 	@Override
 	public void loadContent(){
 		new Bin0011Items().load();
 		new Bin0011Blocks().load();
 		new Bin0011TechTree().load();
+// bullet type bakal gw bikin nanti
 //		new Bin0011Bullets().load();
 	}
 }
