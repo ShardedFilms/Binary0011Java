@@ -19,7 +19,7 @@ public class bin0011 extends Mod{
 		new Bin0011Items().load();
 		new Bin0011Blocks().load();
 		new Bin0011TechTree().load();
-		new Bin00011Planets().load();
+		new Bin0011Planets().load();
 // bullet type bakal gw bikin nanti
 //		new Bin0011Bullets().load();
 	}
