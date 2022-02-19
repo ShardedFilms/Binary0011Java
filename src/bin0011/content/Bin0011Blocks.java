@@ -34,7 +34,7 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
-		node000, gen0000, gen0001,
+		node000, gen0000, gen0001, burner000,
 		// turrets
 		turret0000, turret0001, turret0010, turret0011,
 		// production
@@ -118,6 +118,15 @@ public class Bin0011Blocks implements ContentList {
 			heatColor = Color.valueOf("FFFFFF66");
 			consumes.item(Bin0011Items.item10);
 			consumes.liquid(Liquids.water, 0.1f);
+		}};
+		burner000 = new BurnerGenerator("burner000") {{
+			requirements(Category.power, with(Bin0011Items.item00, 28, Bin0011Items.item01, 15));
+			localizedName = "burner000";
+			health = 185;
+			powerProduction = 1.2f;
+			itemDuration = 200f;
+			ambientSound = Sounds.smelter;
+			ambientSoundVolume = 0.04f;
 		}};
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
