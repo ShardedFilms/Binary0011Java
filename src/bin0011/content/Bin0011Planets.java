@@ -13,7 +13,7 @@ public class Bin0011Planets implements ContentList {
 
 	@Override
 	public void load() {
-		 displan = new Planet("displan", Planets.sun, 3, 3f) {{
+		 displan = new Planet("displan", Planets.sun, 2, 1.2f) {{
 			localizedName = "Displan";
 			generator = new DisplanPlanetGenerator();
 			meshLoader = () -> new HexMesh(this, 6);
