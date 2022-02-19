@@ -48,10 +48,10 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
     // dacite & charr spam
     {Blocks.salt, Blocks.salt, Blocks.salt, Blocks.salt, Blocks.basalt, Blocks.basalt, Blocks.basalt, Blocks.dacite, Blocks.dacite, Blocks.dacite, Blocks.charr, Blocks.charr, Blocks.darksand},
     {Blocks.salt, Blocks.salt, Blocks.dacite, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.darksand},
-    {Blocks.salt, Blocks.salt, Blocks.dacite, Blocks.darksand, Blocks.charr, Blocks.darksand, Blocks.sand, Blocks.sand, Blocks.basalt, Blocks.sand, Blocks.darksand, Blocks.darksand, Blocks.sand},
-    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.stone, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.sand, Blocks.basalt, Blocks.sand, Blocks.darksand, Blocks.sand, Blocks.sand},
-    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.dacite, Blocks.darksand, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.dacite, Blocks.darksand, Blocks.sand, Blocks.sand, Blocks.sand},
-    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.stone, Blocks.charr, Blocks.sand, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.sand, Blocks.sand, Blocks.sand, Blocks.sand}
+    {Blocks.salt, Blocks.salt, Blocks.dacite, Blocks.darksand, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.basalt, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand},
+    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.stone, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.sand, Blocks.basalt, Blocks.sand, Blocks.darksand, Blocks.darksand, Blocks.darksand},
+    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.dacite, Blocks.darksand, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.dacite, Blocks.darksand, Blocks.sand, Blocks.sand, Blocks.darksand},
+    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.stone, Blocks.charr, Blocks.sand, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand}
     };
 
     ObjectMap<Block, Block> dec = ObjectMap.of(
@@ -75,7 +75,7 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
     @Override
     public void generateSector(Sector sector) {
     	super.generateSector(sector);
-    	sector.generateEnemyBase = true;
+    	sector.generateEnemyBase = false;
     }
 
     @Override
@@ -266,7 +266,7 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
 
         float difficulty = sector.threat;
         ints.clear();
-        ints.ensureCapacity(width * height / 4);
+        ints.ensureCapacity(width * height / 6);
 
         int ruinCount = rand.random(-2, 4);
         if (ruinCount > 0) {
