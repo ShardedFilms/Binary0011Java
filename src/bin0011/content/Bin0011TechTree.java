@@ -113,6 +113,7 @@ public class Bin0011TechTree implements ContentList {
 			node(Bin0011Blocks.crft0011, () -> {
 				node(Bin0011Blocks.mcrft0000, () -> {
 					node(Bin0011Blocks.mcrft0001);
+			});
 		});
 		extendNode(Blocks.combustionGenerator, () -> {
 			node(Bin0011Blocks.node000);
