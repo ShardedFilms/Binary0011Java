@@ -1,4 +1,4 @@
-package creatiive.maps.planet;
+package bin0011.maps.planet;
 
 import arc.graphics.Color;
 import arc.math.*;
@@ -24,12 +24,12 @@ import mindustry.graphics.g3d.PlanetGrid.*;
 import mindustry.maps.generators.*;
 import mindustry.type.*;
 
-import creatiive.content.*;
+import bin0011.content.*;
 
 import static mindustry.Vars.*;
 
-public class ScalerPlanetGenerator extends SerpuloPlanetGenerator {
-	public ScalerPlanetGenerator() {
+public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
+	public DisplanPlanetGenerator() {
 	}
 
 	public int seed = 96;
@@ -184,7 +184,7 @@ public class ScalerPlanetGenerator extends SerpuloPlanetGenerator {
 
         inverseFloodFill(tiles.getn(spawn.x, spawn.y));
 
-        Seq<Block> ores = Seq.with(Blocks.oreCopper, Blocks.oreLead, CreatiiveBlocks.oreDusterite);
+        Seq<Block> ores = Seq.with(Blocks.oreCopper, Blocks.oreLead);
         float poles = Math.abs(sector.tile.v.y);
         float nmag = 0.5f;
         float scl = 1f;
@@ -226,7 +226,7 @@ public class ScalerPlanetGenerator extends SerpuloPlanetGenerator {
             }
 
             if (ore == Blocks.oreScrap && rand.chance(0.33)) {
-                floor = CreatiiveBlocks.sandDamagedMetalFloor;
+                floor = Blocks.darksand;
             }
         });
 
