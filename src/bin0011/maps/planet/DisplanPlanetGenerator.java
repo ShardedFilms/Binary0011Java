@@ -49,8 +49,8 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
     {Blocks.salt, Blocks.salt, Blocks.salt, Blocks.salt, Blocks.basalt, Blocks.basalt, Blocks.basalt, Blocks.dacite, Blocks.dacite, Blocks.dacite, Blocks.charr, Blocks.charr, Blocks.darksand},
     {Blocks.salt, Blocks.salt, Blocks.dacite, Blocks.darksand, Blocks.darksand, Blocks.stone, Blocks.dacite, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.stone, Blocks.darksand},
     {Blocks.salt, Blocks.salt, Blocks.dacite, Blocks.darksand, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.basalt, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand},
-    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.stone, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.sand, Blocks.basalt, Blocks.sand, Blocks.darksand, Blocks.darksand, Blocks.darksand},
-    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.dacite, Blocks.darksand, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.dacite, Blocks.darksand, Blocks.sand, Blocks.sand, Blocks.darksand},
+    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.stone, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.basalt, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand},
+    {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.dacite, Blocks.darksand, Blocks.charr, Blocks.charr, Blocks.darksand, Blocks.dacite, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand},
     {Blocks.charr, Blocks.salt, Blocks.dacite, Blocks.stone, Blocks.charr, Blocks.sand, Blocks.charr, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand, Blocks.darksand}
     };
 
@@ -75,7 +75,7 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
     @Override
     public void generateSector(Sector sector) {
     	super.generateSector(sector);
-    	sector.generateEnemyBase = false;
+    	sector.generateEnemyBase = true;
     }
 
     @Override
