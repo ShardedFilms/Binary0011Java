@@ -38,7 +38,7 @@ public class Bin0011Blocks implements ContentList {
 		// turrets
 		turret0000, turret0001, turret0010, turret0011,
 		// production
-		crft0000, crft0001, crft0010, crft0011, mcrft0000;
+		crft0000, crft0001, crft0010, crft0011, mcrft0000, mcrft0001;
 
 	@Override
 	public void load() {
@@ -304,6 +304,25 @@ public class Bin0011Blocks implements ContentList {
 				Items.coal, 1
 			));
 			outputItem = new ItemStack(Bin0011Items.item00, 1);
+		}};
+		mcrft0001 = new GenericCrafter("mcrft0001") {{
+			requirements(Category.crafting, with(
+				Items.copper, 50,
+				Items.graphite, 30,
+				Items.lead, 45
+			));
+			size = 2;
+			localizedName = "mcrft0001";
+			health = 150 * size * size;
+			itemCapacity = 25;
+			craftTime = 90f;
+			craftEffect = Fx.smokeCloud;
+			consumes.items(with(
+				Items.copper, 1,
+				Items.lead, 2,
+				Items.metaglass, 1
+			));
+			outputItem = new ItemStack(Bin0011Items.item01, 1);
 		}};
 		// end m i n i c r a f t e r s
 		// end production
