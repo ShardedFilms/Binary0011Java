@@ -75,7 +75,7 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
     @Override
     public void generateSector(Sector sector) {
     	super.generateSector(sector);
-    	sector.generateEnemyBase = true;
+    	sector.generateEnemyBase = false;
     }
 
     @Override
@@ -266,7 +266,7 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
 
         float difficulty = sector.threat;
         ints.clear();
-        ints.ensureCapacity(width * height / 6);
+        ints.ensureCapacity(width * height / 4);
 
         int ruinCount = rand.random(-2, 4);
         if (ruinCount > 0) {
