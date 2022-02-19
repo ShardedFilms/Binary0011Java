@@ -13,11 +13,13 @@ public class Bin0011Planets implements ContentList {
 
 	@Override
 	public void load() {
-		 displan = new Planet("displan", Planets.sun, 2, 1.2f) {{
+		displan = new Planet("displan", Planets.sun, 2, 0.97f) {{
 			localizedName = "Displan";
 			generator = new DisplanPlanetGenerator();
 			meshLoader = () -> new HexMesh(this, 6);
 			atmosphereColor = Color.valueOf("9f9f9f");
+			atmosphereRadIn = 0.02f;
+			atmosphereRadOut = 0.15f;
 			startSector = 0;
 			alwaysUnlocked = true;
 		}};
