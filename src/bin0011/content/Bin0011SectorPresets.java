@@ -18,6 +18,7 @@ public class Bin0011SectorPresets implements ContentList {
             localizedName = "dis00";
             captureWave = 30;
             difficulty = 3;
+            alwaysUnlocked = true;
         }};
         // end displan
     }
