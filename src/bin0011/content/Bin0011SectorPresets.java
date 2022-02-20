@@ -8,13 +8,14 @@ import bin0011.content.Bin0011Planets.*;
 
 public class Bin0011SectorPresets implements ContentList {
     public static SectorPreset
-    daciteFields;
+    dis00;
 
     @Override
     public void load(){
-        //reg displan
-        daciteFields = new SectorPreset("dacite-fields", Bin0011Planets.displan, 15){{
-            localizedName = "Dacite Fields";
+        // reg displan
+        // gw sengaja pake base 16 biar gw bisa bikin >16 misi tanpa harus khawatir angkanya bakal sampe max value (kalo bas 16 max valuenya 16^digit -> 16^2 = 256
+        dis00 = new SectorPreset("dis00", Bin0011Planets.displan, 15){{
+            localizedName = "dis00";
             captureWave = 30;
             difficulty = 3;
         }};
