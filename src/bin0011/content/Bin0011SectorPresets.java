@@ -13,7 +13,10 @@ public class Bin0011SectorPresets implements ContentList {
     @Override
     public void load(){
         //reg displan
+        /* naming system untuk sector beda dari naming system block. 
+        gw gak pengen nama sector digitnya banyak karena pake base 2/binary. disini gw pake hexadecimal, base 16 */
         dis00 = new SectorPreset("dis00", Bin0011Planets.displan, 15){{
+            localizedName = "dis00";
             captureWave = 30;
             difficulty = 3;
         }};
