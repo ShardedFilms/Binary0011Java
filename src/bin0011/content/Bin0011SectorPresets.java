@@ -4,7 +4,7 @@ import mindustry.ctype.*;
 import mindustry.type.*;
 import bin0011.content.*;
 import bin0011.maps.planet.*;
-import static bin0011.content.*;
+import static bin0011.content.Bin0011Planets;
 
 public class Bin0011SectorPresets implements ContentList {
     public static SectorPreset
