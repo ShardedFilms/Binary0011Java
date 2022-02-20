@@ -8,7 +8,7 @@ import bin0011.content.Bin0011Planets.*;
 
 public class Bin0011SectorPresets implements ContentList {
     public static SectorPreset
-    dis00;
+    daciteFields;
 
     @Override
     public void load(){
