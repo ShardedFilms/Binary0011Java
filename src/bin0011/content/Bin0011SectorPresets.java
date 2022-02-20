@@ -13,8 +13,6 @@ public class Bin0011SectorPresets implements ContentList {
     @Override
     public void load(){
         //reg displan
-        /* naming system untuk sector beda dari naming system block. 
-        gw gak pengen nama sector digitnya banyak karena pake base 2/binary. disini gw pake hexadecimal, base 16 */
         daciteFields = new SectorPreset("dacite-fields", Bin0011Planets.displan, 15){{
             localizedName = "Dacite Fields";
             addStartingItems = true;
