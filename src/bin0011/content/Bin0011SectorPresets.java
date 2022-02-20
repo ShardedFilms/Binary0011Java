@@ -4,7 +4,7 @@ import mindustry.ctype.*;
 import mindustry.type.*;
 import bin0011.content.*;
 import bin0011.maps.planet.*;
-import bin0011.content.Bin0011Planets;
+import bin0011.content.Bin0011Planets.*;
 
 public class Bin0011SectorPresets implements ContentList {
     public static SectorPreset
@@ -16,7 +16,6 @@ public class Bin0011SectorPresets implements ContentList {
         daciteFields = new SectorPreset("dacite-fields", Bin0011Planets.displan, 15){{
             localizedName = "Dacite Fields";
             addStartingItems = true;
-            startWaveMultiplier = 2f;
             captureWave = 30;
             difficulty = 3;
         }};
