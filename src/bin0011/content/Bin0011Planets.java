@@ -20,7 +20,7 @@ public class Bin0011Planets implements ContentList {
 			atmosphereColor = Color.valueOf("9f9f9f");
 			atmosphereRadIn = 0.02f;
 			atmosphereRadOut = 0.15f;
-			startSector = 15;
+			startSector = 27;
 			alwaysUnlocked = true;
 		}};
 	}
