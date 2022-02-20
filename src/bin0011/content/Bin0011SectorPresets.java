@@ -5,7 +5,7 @@ import mindustry.type.*;
 
 import static mindustry.content.Planets.*;
 
-public class SectorPresets implements ContentList {
+public class Bin0011SectorPresets implements ContentList {
     public static SectorPreset
     dis00;
 
