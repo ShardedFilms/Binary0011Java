@@ -15,7 +15,6 @@ public class Bin0011SectorPresets implements ContentList {
         //reg displan
         daciteFields = new SectorPreset("dacite-fields", Bin0011Planets.displan, 15){{
             localizedName = "Dacite Fields";
-            addStartingItems = true;
             captureWave = 30;
             difficulty = 3;
         }};
