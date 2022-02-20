@@ -36,7 +36,7 @@ public class Bin0011Blocks implements ContentList {
 		// power
 		node000, gen0000, gen0001, burner000,
 		// turrets
-		turret0000, turret0001, turret0010, turret0011,
+		turret0000, turret0001, turret0010, turret0011, turret0100,
 		// production
 		crft0000, crft0001, crft0010, crft0011, mcrft0000, mcrft0001;
 
@@ -215,6 +215,26 @@ public class Bin0011Blocks implements ContentList {
 
             		consumes.powerCond(3.5f, (TractorBeamBuild e) -> e.target != null);
 		}};
+        	turret0100 = new ItemTurret("turret0100"){{
+            		requirements(Category.turret, with(Bin0011Items.item00, 250, Bin0011Items.item01, 75, Bin0011Items.item11, 57));
+            		ammo(
+				Bin0011Items.item00, Bullets.standardThorium,
+				Bin0011Items.item01, Bullets.standardDenseBig,
+				Bin0011Items.item10, Bullets.standardIncendiaryBig,
+				Bin0011Items.item11, Bullets.standardThoriumBig
+			);
+			localizedName = "turret0100";
+            		targetAir = false;
+            		reloadTime = 90f;
+			shots = 7;
+            		recoilAmount = 1f;
+			size = 2;
+           	 	range = 192f;
+            		inaccuracy = 0f;
+            		shootCone = 10f;
+            		health = 325 * size * size;
+            		limitRange(0f);
+        	}};
 		// end turret
 		// reg production
 		crft0000 = new GenericCrafter("crft0000") {{
