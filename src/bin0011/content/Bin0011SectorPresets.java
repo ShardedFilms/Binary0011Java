@@ -2,8 +2,9 @@ package bin0011.content;
 
 import mindustry.ctype.*;
 import mindustry.type.*;
-
-import static bin0011.content.Bin0011Planets;
+import bin0011.content.*;
+import bin0011.maps.planet.*;
+import static bin0011.content.*;
 
 public class Bin0011SectorPresets implements ContentList {
     public static SectorPreset
