@@ -34,9 +34,9 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
-		node000, gen0000, gen0001, burner000,
+		node000, node001, gen0000, gen0001, burner000,
 		// turrets
-		turret0000, turret0001, turret0010, turret0011, turret0100,
+		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101,
 		// production
 		crft0000, crft0001, crft0010, crft0011, mcrft0000, mcrft0001;
 
@@ -90,6 +90,15 @@ public class Bin0011Blocks implements ContentList {
 			health = 135;
 			maxNodes = 25;
 			laserRange = 19f;
+		node001 = new PowerNode("node001") {{
+			requirements(Category.power, with(
+				Bin0011Items.item00, 4,
+				Bin0011Items.item01, 8
+			));
+			localizedName = "node001";
+			health = 270;
+			maxNodes = 35;
+			laserRange = 120f;
 		}};
 		gen0000 = new SingleTypeGenerator("gen0000") {{
 			requirements(Category.power, with(Bin0011Items.item00, 60, Bin0011Items.item01, 45, Bin0011Items.item10, 30));
@@ -224,7 +233,7 @@ public class Bin0011Blocks implements ContentList {
 				Bin0011Items.item11, Bullets.standardThoriumBig
 			);
 			localizedName = "turret0100";
-            		targetAir = false;
+            		targetAir = true;
             		reloadTime = 90f;
 			shots = 7;
             		recoilAmount = 1f;
@@ -233,6 +242,25 @@ public class Bin0011Blocks implements ContentList {
             		inaccuracy = 0f;
             		shootCone = 10f;
             		health = 325 * size * size;
+            		limitRange(0f);
+        	}};
+        	turret0101 = new ItemTurret("turret0101"){{
+            		requirements(Category.turret, with(Bin0011Items.item00, 250, Bin0011Items.item01, 175, Bin0011Items.item11, 100));
+            		ammo(
+				Bin0011Items.item01, Bullets.missileExplosive,
+				Bin0011Items.item10, Bullets.missileIncendiary,
+				Bin0011Items.item11, Bullets.missileSurge
+			);
+			localizedName = "turret0101";
+            		targetAir = true;
+            		reloadTime = 90f;
+			shots = 7;
+            		recoilAmount = 1f;
+			size = 2;
+           	 	range = 225f;
+            		inaccuracy = 0f;
+            		shootCone = 10f;
+            		health = 400 * size * size;
             		limitRange(0f);
         	}};
 		// end turret
