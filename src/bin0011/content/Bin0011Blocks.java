@@ -34,7 +34,7 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
-		node000, node001, gen0000, gen0001, burner000,
+		node000, node001, gen0000, gen0001, burner000, panel00, panel01,
 		// turrets
 		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101,
 		// production
@@ -138,6 +138,20 @@ public class Bin0011Blocks implements ContentList {
 			ambientSound = Sounds.smelter;
 			ambientSoundVolume = 0.04f;
 			size = 2;
+		}};
+		panel00 = new SolarGenerator("panel00") {{
+			requirements(Category.power, with(Bin0011Items.item00, 65, Bin0011Items.item01, 40, Bin0011Items.item10, 55));
+			localizedName = "panel00";
+			health = 175 * size * size;
+			size = 2;
+			powerProduction = 0.65f;
+		}};
+		panel01 = new SolarGenerator("panel01") {{
+			requirements(Category.power, with(Bin0011Items.item00, 100, Bin0011Items.item01, 65, Bin0011Items.item10, 70));
+			localizedName = "panel01";
+			health = 200 * size * size;
+			size = 3;
+			powerProduction = 1.42f;
 		}};
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
