@@ -1,6 +1,6 @@
 # Binary0011 Java
 
-an example of a simple java mod for mindustry v7. the way you can compile/implement is in the text below.
+an example of a ""simple"" java mod for mindustry v7. the way you can compile/implement is in the text below.
 
 [![Discord](https://img.shields.io/discord/943445343926906930.svg?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord&color=17cf48)](https://discord.gg/e3gGyen2dT)
 
@@ -40,5 +40,3 @@ Only use `implementation` if you want to package another Java library *with your
 
 *[1]* *On Linux/Mac it's `./gradlew`, but if you're using Linux I assume you know how to run executables properly anyway.*  
 *[2]: Yes, I know this is stupid. It's a Github UI limitation - while the jar itself is uploaded unzipped, there is currently no way to download it as a single file.*
-
-`0011`
