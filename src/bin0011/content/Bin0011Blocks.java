@@ -100,6 +100,7 @@ public class Bin0011Blocks implements ContentList {
 			health = 270;
 			maxNodes = 35;
 			laserRange = 120f;
+			size = 2;
 		}};
 		gen0000 = new SingleTypeGenerator("gen0000") {{
 			requirements(Category.power, with(Bin0011Items.item00, 60, Bin0011Items.item01, 45, Bin0011Items.item10, 30));
@@ -273,11 +274,11 @@ public class Bin0011Blocks implements ContentList {
 			);
 			localizedName = "turret0101";
             		targetAir = true;
-            		reloadTime = 90f;
-			shots = 7;
+            		reloadTime = 3.5f;
+			shots = 2;
             		recoilAmount = 1f;
 			size = 2;
-           	 	range = 225f;
+           	 	range = 250f;
             		inaccuracy = 0f;
             		shootCone = 10f;
             		health = 400 * size * size;
