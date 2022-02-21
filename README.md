@@ -2,7 +2,7 @@
 
 an example of a simple java mod for mindustry v7. the way you can compile/implement is in the text below.
 
-[![Binary0011 Discord](https://img.shields.io/discord/943445343926906930.svg?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord&color=17cf48)](https://discord.gg/e3gGyen2dT)
+[![Discord](https://img.shields.io/discord/943445343926906930.svg?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord&color=17cf48)](https://discord.gg/e3gGyen2dT)
 
 ## Building for Desktop Testing
 
