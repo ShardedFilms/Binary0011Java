@@ -105,6 +105,8 @@ public class Bin0011TechTree implements ContentList {
 		extendNode(Blocks.lancer, () -> {
 			node(Bin0011Blocks.turret0010);
 			node(Bin0011Blocks.turret0011);
+			node(Bin0011Blocks.turret0100);
+			node(Bin0011Blocks.turret0101);
 		});
 		extendNode(Blocks.kiln, () -> {
 			node(Bin0011Blocks.crft0000);
@@ -114,8 +116,10 @@ public class Bin0011TechTree implements ContentList {
 		});
 		extendNode(Blocks.combustionGenerator, () -> {
 			node(Bin0011Blocks.node000);
+			node(Bin0011Blocks.node001);
 			node(Bin0011Blocks.gen0000);
 			node(Bin0011Blocks.gen0001);
+			node(Bin0011Blocks.burner000);
 		});
 	}
 }
