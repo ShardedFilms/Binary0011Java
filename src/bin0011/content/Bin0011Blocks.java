@@ -90,6 +90,7 @@ public class Bin0011Blocks implements ContentList {
 			health = 135;
 			maxNodes = 25;
 			laserRange = 19f;
+		}};
 		node001 = new PowerNode("node001") {{
 			requirements(Category.power, with(
 				Bin0011Items.item00, 4,
