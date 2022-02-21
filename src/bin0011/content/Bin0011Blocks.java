@@ -244,8 +244,12 @@ public class Bin0011Blocks implements ContentList {
             		health = 325 * size * size;
             		limitRange(0f);
         	}};
-        	turret0101 = new ItemTurret("turret0101"){{
-            		requirements(Category.turret, with(Bin0011Items.item00, 250, Bin0011Items.item01, 175, Bin0011Items.item11, 100));
+        	turret0101 = new ItemTurret("turret0101") {{
+            		requirements(Category.turret, with(
+				Bin0011Items.item00, 250, 
+				Bin0011Items.item01, 175, 
+				Bin0011Items.item11, 100
+			));
             		ammo(
 				Bin0011Items.item01, Bullets.missileExplosive,
 				Bin0011Items.item10, Bullets.missileIncendiary,
