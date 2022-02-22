@@ -3,6 +3,6 @@ name: "binary0011"
 author: "1237"
 main: "bin0011.bin0011"
 description: "0011"
-version: 0.0.0
+version: 0.0.2
 minGameVersion: 135
 java: true
