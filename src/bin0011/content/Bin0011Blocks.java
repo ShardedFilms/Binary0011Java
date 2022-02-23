@@ -47,6 +47,7 @@ public class Bin0011Blocks implements ContentList {
 		// reg ore
 		oreItem00 = new OreBlock(Bin0011Items.item00);
 		oreItem10 = new OreBlock(Bin0011Items.item10);
+		// end ore
 		// reg defense
 		wall00 = new Wall("wall00") {{
 			requirements(Category.defense, with(
@@ -128,7 +129,7 @@ public class Bin0011Blocks implements ContentList {
 			itemDuration = 240f;
 			hasItems = true;
 			hasLiquids = true;
-			size = 2;
+			size = 3;
 			ambientSound = Sounds.steam;
 			ambientSoundVolume = 0.03f;
 			heatColor = Color.valueOf("FFFFFF66");
