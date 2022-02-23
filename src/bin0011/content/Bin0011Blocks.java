@@ -160,10 +160,10 @@ public class Bin0011Blocks implements ContentList {
 			baseExplosiveness = 2.5f
 		}};
 		battery01 = new Battery("battery01") {{
-			requirements(Category.power, with(Bin0011Items.item00, 12, Bin0011Items.item01, 54));
+			requirements(Category.power, with(Bin0011Items.item00, 12, Bin0011Items.item01, 54, Bin0011Items.item11, 20));
 			consumes.powerBuffered(58000f);
-			baseExplosiveness = 4.5f;
-			size = 2;
+			baseExplosiveness = 5f;
+			size = 3;
 		}};
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
