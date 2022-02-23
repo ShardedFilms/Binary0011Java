@@ -271,7 +271,7 @@ public class Bin0011Blocks implements ContentList {
             		reloadTime = 90f;
 			shots = 7;
             		recoilAmount = 1f;
-			size = 2;
+			size = 3;
            	 	range = 192f;
             		inaccuracy = 0f;
             		shootCone = 10f;
