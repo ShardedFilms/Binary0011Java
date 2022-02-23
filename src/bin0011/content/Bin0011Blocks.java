@@ -32,7 +32,7 @@ public class Bin0011Blocks implements ContentList {
 	public static Block 
 		
 		// ore
-		ore00,
+		oreItem00, oreItem10
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
@@ -45,7 +45,8 @@ public class Bin0011Blocks implements ContentList {
 	@Override
 	public void load() {
 		// reg ore
-		ore00 = new OreBlock(Bin0011Items.item00);
+		oreItem00 = new OreBlock(Bin0011Items.item00);
+		oreItem10 = new OreBlock(Bin0011Items.item10);
 		// reg defense
 		wall00 = new Wall("wall00") {{
 			requirements(Category.defense, with(
