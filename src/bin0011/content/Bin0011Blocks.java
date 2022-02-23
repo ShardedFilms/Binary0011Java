@@ -34,7 +34,7 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
-		node000, node001, gen0000, gen0001, burner000, panel00, panel01,
+		node000, node001, gen0000, gen0001, burner000, panel00, panel01, battery00, battery01,
 		// turrets
 		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101,
 		// production
@@ -153,6 +153,17 @@ public class Bin0011Blocks implements ContentList {
 			health = 200 * size * size;
 			size = 3;
 			powerProduction = 1.42f;
+		}};
+		battery00 = new Battery("battery00") {{
+			requirements(Category.power, with(Bin0011Items.item00, 4, Bin0011Items.item01, 18));
+			consumes.powerBuffered(4250f);
+			baseExplosiveness = 2.5f
+		}};
+		battery01 = new Battery("battery01") {{
+			requirements(Category.power, with(Bin0011Items.item00, 12, Bin0011Items.item01, 54));
+			consumes.powerBuffered(58000f);
+			baseExplosiveness = 4.5f;
+			size = 2;
 		}};
 		// reg turret
 		turret0000 = new ItemTurret("turret0000"){{
