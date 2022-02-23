@@ -215,7 +215,7 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
 
         inverseFloodFill(tiles.getn(spawn.x, spawn.y));
 
-        Seq<Block> ores = Seq.with(Blocks.oreCopper, Blocks.oreLead);
+        Seq<Block> ores = Seq.with(Blocks.oreCopper, Blocks.oreLead, Bin0011Blocks.oreItem00);
         float poles = Math.abs(sector.tile.v.y);
         float nmag = 0.75f;
         float scl = 1f;
@@ -223,6 +223,10 @@ public class DisplanPlanetGenerator extends SerpuloPlanetGenerator {
 
         if(Simplex.noise3d(seed, 2, 0.5, scl, sector.tile.v.x, sector.tile.v.y, sector.tile.v.z)*nmag + poles > 0.25f*addscl){
             ores.add(Blocks.oreCoal);
+        }
+
+        if(Simplex.noise3d(seed, 2, 0.5, scl, sector.tile.v.x, sector.tile.v.y, sector.tile.v.z)*nmag + poles > 0.25f*addscl){
+            ores.add(Bin0011Items.oreItem10);
         }
 
         if(Simplex.noise3d(seed, 2, 0.5, scl, sector.tile.v.x + 1, sector.tile.v.y, sector.tile.v.z)*nmag + poles > 0.5f*addscl){
