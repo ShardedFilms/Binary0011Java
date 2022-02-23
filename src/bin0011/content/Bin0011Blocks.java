@@ -38,7 +38,7 @@ public class Bin0011Blocks implements ContentList {
 		// power
 		node000, node001, gen0000, gen0001, burner000, panel00, panel01, battery00, battery01,
 		// turrets
-		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101,
+		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101, turret0110,
 		// production
 		crft0000, crft0001, crft0010, crft0011, mcrft0000, mcrft0001;
 
@@ -301,6 +301,47 @@ public class Bin0011Blocks implements ContentList {
             		health = 400 * size * size;
             		limitRange(0f);
         	}};
+/*         arc = new PowerTurret("arc"){{
+            requirements(Category.turret, with(Items.copper, 50, Items.lead, 50));
+            shootType = new LightningBulletType(){{
+                damage = 20;
+                lightningLength = 25;
+                collidesAir = false;
+                ammoMultiplier = 1f;
+            }};
+            reloadTime = 35f;
+            shootCone = 40f;
+            rotateSpeed = 8f;
+            powerUse = 3.3f;
+            targetAir = false;
+            range = 90f;
+            shootEffect = Fx.lightningShoot;
+            heatColor = Color.red;
+            recoilAmount = 1f;
+            size = 1;
+            health = 260;
+            shootSound = Sounds.spark;
+        }}; */
+		turret0110 = new PowerTurret("turret0110"){{
+			requirements(Category.turret, with(Bin0011Items.item00, 40, Bin0011Items.item01, 32));
+			shootType = new LightningBulletType(){{
+				damage = 35;
+				lightningLength = 38;
+				collidesAir = true;
+				ammoMultiplier = 1f;
+		}};
+			reloadTime = 30f;
+			shootCone = 40f;
+			rotateSpeed = 10f;
+			powerUse = 3.4f;
+			targetAir = true;
+			range = 180f;
+			shootEffect = Fx.lightningShoot;
+			recoilAmount = 1f;
+			size = 2;
+			health = 520;
+			shootSound = Sounds.spark;
+		}};
 		// end turret
 		// reg production
 		crft0000 = new GenericCrafter("crft0000") {{
