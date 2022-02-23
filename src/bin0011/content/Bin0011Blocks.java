@@ -301,27 +301,6 @@ public class Bin0011Blocks implements ContentList {
             		health = 400 * size * size;
             		limitRange(0f);
         	}};
-/*         arc = new PowerTurret("arc"){{
-            requirements(Category.turret, with(Items.copper, 50, Items.lead, 50));
-            shootType = new LightningBulletType(){{
-                damage = 20;
-                lightningLength = 25;
-                collidesAir = false;
-                ammoMultiplier = 1f;
-            }};
-            reloadTime = 35f;
-            shootCone = 40f;
-            rotateSpeed = 8f;
-            powerUse = 3.3f;
-            targetAir = false;
-            range = 90f;
-            shootEffect = Fx.lightningShoot;
-            heatColor = Color.red;
-            recoilAmount = 1f;
-            size = 1;
-            health = 260;
-            shootSound = Sounds.spark;
-        }}; */
 		turret0110 = new PowerTurret("turret0110"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 40, Bin0011Items.item01, 32));
 			shootType = new LightningBulletType(){{
@@ -330,7 +309,8 @@ public class Bin0011Blocks implements ContentList {
 				collidesAir = true;
 				ammoMultiplier = 1f;
 		}};
-			reloadTime = 30f;
+			localizedName = "turret0110";
+	 		reloadTime = 30f;
 			shootCone = 40f;
 			rotateSpeed = 10f;
 			powerUse = 3.4f;
