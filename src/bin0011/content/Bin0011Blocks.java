@@ -44,7 +44,7 @@ public class Bin0011Blocks implements ContentList {
 	@Override
 	public void load() {
 		// reg ore
-		ore00 = new OreBlock("item00");
+		ore00 = new OreBlock(Bin0011Items.item00);
 		// reg defense
 		wall00 = new Wall("wall00") {{
 			requirements(Category.defense, with(
