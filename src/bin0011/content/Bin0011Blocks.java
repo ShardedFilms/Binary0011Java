@@ -32,7 +32,7 @@ public class Bin0011Blocks implements ContentList {
 	public static Block 
 		
 		// ore
-		oreItem00, oreItem10
+		oreItem00, oreItem10,
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
