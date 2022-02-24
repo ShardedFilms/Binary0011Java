@@ -38,7 +38,7 @@ public class Bin0011Blocks implements ContentList {
 		// power
 		node000, node001, gen0000, gen0001, burner000, burner001, panel00, panel01, battery00, battery01,
 		// turrets
-		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101, turret0110,
+		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101, turret0110, turret0111,
 		// production
 		crft0000, crft0001, crft0010, crft0011, mcrft0000, mcrft0001;
 
@@ -333,6 +333,17 @@ public class Bin0011Blocks implements ContentList {
 			size = 2;
 			health = 520;
 			shootSound = Sounds.spark;
+		}};
+		turret0111 = new PointDefenseTurret("turret0111"){{
+			requirements(Category.turret, with(Bin0011Items.item00, 55, Bin0011Items.item01, 35));
+			health = 10 * size * size;
+			range = 360f;
+			hasPower = true;
+			consumes.powerCond(6.7f, (PointDefenseBuild b) -> b.target != null);
+			size = 1
+	 	 	shootLength = 5f;
+	 	 	bulletDamage = 30f;
+	 	 	reloadTime = 0.1f;
 		}};
 		// end turret
 		// reg production
