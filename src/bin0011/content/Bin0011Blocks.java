@@ -118,7 +118,7 @@ public class Bin0011Blocks implements ContentList {
 			size = 2;
 			ambientSound = Sounds.steam;
 			ambientSoundVolume = 0.03f;
-			heatColor = Color.valueOf("FFFFFF99");
+			heatColor = Color.valueOf("FFFFFF47");
 			consumes.item(Bin0011Items.item10);
 		}};
 		gen0001 = new SingleTypeGenerator("gen0001") {{
@@ -132,7 +132,7 @@ public class Bin0011Blocks implements ContentList {
 			size = 3;
 			ambientSound = Sounds.steam;
 			ambientSoundVolume = 0.03f;
-			heatColor = Color.valueOf("FFFFFF66");
+			heatColor = Color.valueOf("FFFFFF44");
 			consumes.item(Bin0011Items.item10);
 			consumes.liquid(Liquids.water, 0.1f);
 		}};
@@ -145,6 +145,17 @@ public class Bin0011Blocks implements ContentList {
 			ambientSound = Sounds.smelter;
 			ambientSoundVolume = 0.04f;
 			size = 2;
+		}};
+		burner001 = new BurnerGenerator("burner001") {{
+			requirements(Category.power, with(Bin0011Items.item00, 35, Bin0011Items.item01, 24));
+			localizedName = "burner001";
+			health = 200;
+			powerProduction = 1.4f;
+			itemDuration = 240f;
+			ambientSound = Sounds.smelter;
+			ambientSoundVolume = 0.03f;
+			size = 2;
+	 	 	heatColor = Color.valueOf("FFFFFF77");
 		}};
 		panel00 = new SolarGenerator("panel00") {{
 			requirements(Category.power, with(Bin0011Items.item00, 65, Bin0011Items.item01, 40, Bin0011Items.item10, 55));
