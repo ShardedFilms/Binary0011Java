@@ -279,7 +279,7 @@ public class Bin0011Blocks implements ContentList {
 			);
 			localizedName = "turret0100";
             		targetAir = true;
-            		reloadTime = 90f;
+            		reloadTime = 78f;
 			shots = 7;
             		recoilAmount = 1f;
 			size = 3;
@@ -288,6 +288,7 @@ public class Bin0011Blocks implements ContentList {
             		shootCone = 10f;
             		health = 325 * size * size;
             		limitRange(0f);
+			heatColor = Color.valueOf("FFFFFF55");
         	}};
         	turret0101 = new ItemTurret("turret0101") {{
             		requirements(Category.turret, with(
