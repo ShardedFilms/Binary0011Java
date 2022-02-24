@@ -1,11 +1,12 @@
 (+) 2 ores¹
 (+) 2 batteries
-(+) ~~2197~~ turret0110
+(+) turret0110, 0111
+(+) burner001
 (*) item00 & item10 is now mineable (and the ore is now spawning in displan)¹
 (*) resprite & resize(d) gen0001
-(*) resize(d) turret0100
+(*) resize & buffed turret0100
 
 to do list
 mcrft0010 & 0011
 10 & 11 ore
-more burner gens
+more burner gens*
