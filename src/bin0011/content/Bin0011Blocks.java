@@ -340,7 +340,7 @@ public class Bin0011Blocks implements ContentList {
 			range = 360f;
 			hasPower = true;
 			consumes.powerCond(6.7f, (PointDefenseBuild b) -> b.target != null);
-			size = 1
+			size = 1;
 	 	 	shootLength = 5f;
 	 	 	bulletDamage = 30f;
 	 	 	reloadTime = 0.1f;
