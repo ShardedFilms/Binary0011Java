@@ -36,7 +36,7 @@ public class Bin0011Blocks implements ContentList {
 		// defense
 		wall00, wallLarge00, wall01, wallLarge01,
 		// power
-		node000, node001, gen0000, gen0001, burner000, panel00, panel01, battery00, battery01,
+		node000, node001, gen0000, gen0001, burner000, burner001, panel00, panel01, battery00, battery01,
 		// turrets
 		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101, turret0110,
 		// production
