@@ -40,7 +40,7 @@ public class Bin0011Blocks implements ContentList {
 		// turrets
 		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101, turret0110, turret0111,
 		// production
-		crft0000, crft0001, crft0010, crft0011, mcrft0000, mcrft0001;
+		crafter0000, crafter0001, crafterLarge0000, crafterLarge0001, crafterLarge0010, crafterLarge0011;
 
 	@Override
 	public void load() {
@@ -347,7 +347,43 @@ public class Bin0011Blocks implements ContentList {
 		}};
 		// end turret
 		// reg production
-		crft0000 = new GenericCrafter("crft0000") {{
+		crafter0000 = new GenericCrafter("mcrft0000") {{
+			requirements(Category.crafting, with(
+				Items.copper, 35,
+				Items.lead, 12
+			));
+			size = 2;
+			localizedName = "mcrft0000";
+			health = 145 * size * size;
+			itemCapacity = 25;
+			craftTime = 90f;
+			craftEffect = Fx.smelt;
+			consumes.items(with(
+				Items.copper, 1,
+				Items.coal, 1
+			));
+			outputItem = new ItemStack(Bin0011Items.item00, 1);
+		}};
+		crafter0001 = new GenericCrafter("mcrft0001") {{
+			requirements(Category.crafting, with(
+				Items.copper, 50,
+				Items.graphite, 30,
+				Items.lead, 45
+			));
+			size = 2;
+			localizedName = "mcrft0001";
+			health = 150 * size * size;
+			itemCapacity = 25;
+			craftTime = 90f;
+			craftEffect = Fx.smokeCloud;
+			consumes.items(with(
+				Items.copper, 1,
+				Items.lead, 2,
+				Items.metaglass, 1
+			));
+			outputItem = new ItemStack(Bin0011Items.item01, 1);
+		}};
+		crafterLarge0000 = new GenericCrafter("crft0000") {{
 			requirements(Category.crafting, with(
 				Items.copper, 60,
 				Items.lead, 35
@@ -366,7 +402,7 @@ public class Bin0011Blocks implements ContentList {
 			consumes.power(1.2f);
 			outputItem = new ItemStack(Bin0011Items.item00, 2);
 		}};
-		crft0001 = new GenericCrafter("crft0001") {{
+		crafterLarge0001 = new GenericCrafter("crft0001") {{
 			requirements(Category.crafting, with(
 				Items.copper, 45,
 				Items.lead, 25,
@@ -387,7 +423,7 @@ public class Bin0011Blocks implements ContentList {
 			consumes.power(1.3f);
 			outputItem = new ItemStack(Bin0011Items.item01, 2);
 		}};
-		crft0010 = new GenericCrafter("crft0010") {{
+		crafterLarge0010 = new GenericCrafter("crft0010") {{
 			requirements(Category.crafting, with(
 				Items.copper, 60,
 				Items.lead, 45,
@@ -407,7 +443,7 @@ public class Bin0011Blocks implements ContentList {
 			consumes.power(1.4f);
 			outputItem = new ItemStack(Bin0011Items.item10, 2);
 		}};
-		crft0011 = new GenericCrafter("crft0011") {{
+		crafterLarge0011 = new GenericCrafter("crft0011") {{
 			requirements(Category.crafting, with(
 				Items.copper, 85,
 				Items.silicon, 75,
@@ -426,44 +462,6 @@ public class Bin0011Blocks implements ContentList {
 			consumes.power(1.5f);
 			outputItem = new ItemStack(Bin0011Items.item11, 2);
 		}};
-		// reg m i n i c r a f t e r s
-		mcrft0000 = new GenericCrafter("mcrft0000") {{
-			requirements(Category.crafting, with(
-				Items.copper, 35,
-				Items.lead, 12
-			));
-			size = 2;
-			localizedName = "mcrft0000";
-			health = 145 * size * size;
-			itemCapacity = 25;
-			craftTime = 90f;
-			craftEffect = Fx.smelt;
-			consumes.items(with(
-				Items.copper, 1,
-				Items.coal, 1
-			));
-			outputItem = new ItemStack(Bin0011Items.item00, 1);
-		}};
-		mcrft0001 = new GenericCrafter("mcrft0001") {{
-			requirements(Category.crafting, with(
-				Items.copper, 50,
-				Items.graphite, 30,
-				Items.lead, 45
-			));
-			size = 2;
-			localizedName = "mcrft0001";
-			health = 150 * size * size;
-			itemCapacity = 25;
-			craftTime = 90f;
-			craftEffect = Fx.smokeCloud;
-			consumes.items(with(
-				Items.copper, 1,
-				Items.lead, 2,
-				Items.metaglass, 1
-			));
-			outputItem = new ItemStack(Bin0011Items.item01, 1);
-		}};
-		// end m i n i c r a f t e r s
 		// end production
 	}
 }
