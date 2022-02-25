@@ -5,6 +5,7 @@
 (*) item00 & item10 is now mineable (and the ore is now spawning in displan)¹
 (*) resprite & resize(d) gen0001
 (*) resize & buffed turret0100
+(*) renamed crafters (crft, mcrft -> crafter, crafterLarge)
 
 to do list
 mcrft0010 & 0011
