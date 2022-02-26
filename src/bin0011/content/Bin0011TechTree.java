@@ -8,6 +8,8 @@ import mindustry.ctype.UnlockableContent;
 import mindustry.game.Objectives.*;
 import mindustry.type.ItemStack;
 import bin0011.content.*;
+import bin0011.content.Bin0011Items.*;
+import bin0011.content.Bin0011Blocks.*;
 
 public class Bin0011TechTree implements ContentList {
 	static TechTree.TechNode context = null;
@@ -79,6 +81,18 @@ public class Bin0011TechTree implements ContentList {
 
 	@Override
 	public void load() {
+		// reg item
+		extendNode(Blocks.coreShard, () -> {
+			nodeProduce(Bin0011Items.item00, () -> {
+				nodeProduce(Bin0011Items.item01);
+				nodeProduce(Bin0011Items.item10, () -> {
+					nodeProduce(Bin0011Items.item11);
+				});
+			});
+		});
+		// end item
+		
+		// reg block
 		// reg crafters
 		extendNode(Blocks.siliconSmelter, () -> {
 			node(Bin0011Blocks.crafter0000, () -> {
@@ -132,27 +146,30 @@ public class Bin0011TechTree implements ContentList {
 			node(Bin0011Blocks.node000, () -> {
 				node(Bin0011Blocks.node001, () -> {
 					node(Bin0011Blocks.gen0000, Seq.with(new Research(Bin0011Items.item10)), () -> {
-						node(Bin0011Blocks.gen0001, Seq.with(new Research(Bin0011Items.item10)), () -> {
-							node(Bin0011Blocks.battery00, () -> {
-								node(Bin0011Blocks.battery01);
-							});
-						});
+						node(Bin0011Blocks.gen0001, Seq.with(new Research(Bin0011Items.item10));
 					});
 				});
 			});
 		});
-			
+		
 		extendNode(Blocks.steamGenerator, () -> {
 			node(Bin0011Blocks.burner000, () -> {
 				node(Bin0011Blocks.burner001);
 			});
 		});
 		
-		extendNode(Blocks.largeSolarPanel, () -> {
+		extendNode(Blocks.battery, () -> {
+			node(Bin0011Blocks.battery00, () -> {
+				node(Bin0011Blocks.battery01);
+			});
+		});
+
+		extendNode(Blocks.solarPanel, () -> {
 			node(Bin0011Blocks.panel00, () -> {
 				node(Bin0011Blocks.panel01);
 			});
 		});
 		// end power
+		// end block
 	}
 }
