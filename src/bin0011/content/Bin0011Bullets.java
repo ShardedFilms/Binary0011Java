@@ -5,9 +5,9 @@ import mindustry.ctype.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
 import mindustry.graphics.*;
-import mindustry.content.*
+import mindustry.content.*;
 
-import bin0011.content.*
+import bin0011.content.*;
 
 public class Bin0011Bullets implements ContentList{
     public static BulletType
