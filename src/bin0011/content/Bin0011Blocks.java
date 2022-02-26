@@ -173,14 +173,14 @@ public class Bin0011Blocks implements ContentList {
 		}};
 		battery00 = new Battery("battery00") {{
 			requirements(Category.power, with(Bin0011Items.item00, 4, Bin0011Items.item01, 18));
-			localizedName = "battery00"
+			localizedName = "battery00";
 			consumes.powerBuffered(4250f);
 			baseExplosiveness = 2.5f;
 		}};
 		battery01 = new Battery("battery01") {{
 			requirements(Category.power, with(Bin0011Items.item00, 12, Bin0011Items.item01, 54, Bin0011Items.item11, 20));
 			consumes.powerBuffered(58000f);
-			localizedName = "battery01"
+			localizedName = "battery01";
 			baseExplosiveness = 5f;
 			size = 3;
 		}};
