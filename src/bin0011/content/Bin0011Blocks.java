@@ -25,7 +25,6 @@ import mindustry.world.meta.*;
 import mindustry.world.draw.*;
 
 import bin0011.content.*;
-import bin0011.content.Bin0011Bullets.*;
 
 import static mindustry.type.ItemStack.with;
 
@@ -210,8 +209,7 @@ public class Bin0011Blocks implements ContentList {
             		requirements(Category.turret, with(Bin0011Items.item00, 32, Bin0011Items.item01, 15));
             		ammo(
 				Bin0011Items.item00, Bullets.artilleryDense,
-				Bin0011Items.item01, Bullets.artilleryHoming,
-				Bin0011Items.item10, Bin0011Bullets.binaryArtilleryDense
+				Bin0011Items.item01, Bullets.artilleryHoming
 			);
 			localizedName = "turret0001";
             		targetAir = false;
