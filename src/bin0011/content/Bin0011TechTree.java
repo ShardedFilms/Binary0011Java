@@ -1,21 +1,15 @@
 package bin0011.content;
 
-import arc.*;
-import arc.struct.*;
-import arc.util.*;
-import mindustry.ctype.*;
-import mindustry.game.Objectives.*;
-import mindustry.type.*;
-
-import static mindustry.content.Blocks.*;
-import static mindustry.content.SectorPresets.craters;
-import static mindustry.content.SectorPresets.*;
-import static mindustry.content.UnitTypes.*;
-
-import bin0011.content.*;
+import arc.struct.Seq;
 import mindustry.content.*;
+import mindustry.content.TechTree.TechNode;
+import mindustry.ctype.ContentList;
+import mindustry.ctype.UnlockableContent;
+import mindustry.game.Objectives.*;
+import mindustry.type.ItemStack;
+import bin0011.content.*;
 
-public class Bin0011TechTree implements ContentList{
+public class Bin0011TechTree implements ContentList {
 	static TechTree.TechNode context = null;
 
 	private static void extendNode (UnlockableContent parent, Runnable children) {
@@ -84,8 +78,7 @@ public class Bin0011TechTree implements ContentList{
 	}
 
 	@Override
-	public void load(){
-		setup();
+	public void load() {
 		// reg crafters
 		extendNode(Blocks.siliconSmelter, () -> {
 			node(Bin0011Blocks.crafter0000, () -> {
