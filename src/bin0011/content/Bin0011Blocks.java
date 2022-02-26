@@ -173,12 +173,14 @@ public class Bin0011Blocks implements ContentList {
 		}};
 		battery00 = new Battery("battery00") {{
 			requirements(Category.power, with(Bin0011Items.item00, 4, Bin0011Items.item01, 18));
+			localizedName = "battery00"
 			consumes.powerBuffered(4250f);
 			baseExplosiveness = 2.5f;
 		}};
 		battery01 = new Battery("battery01") {{
 			requirements(Category.power, with(Bin0011Items.item00, 12, Bin0011Items.item01, 54, Bin0011Items.item11, 20));
 			consumes.powerBuffered(58000f);
+			localizedName = "battery01"
 			baseExplosiveness = 5f;
 			size = 3;
 		}};
@@ -353,7 +355,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.lead, 12
 			));
 			size = 2;
-			localizedName = "mcrft0000";
+			localizedName = "crafter0000";
 			health = 145 * size * size;
 			itemCapacity = 25;
 			craftTime = 90f;
@@ -371,7 +373,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.lead, 45
 			));
 			size = 2;
-			localizedName = "mcrft0001";
+			localizedName = "crafter0001";
 			health = 150 * size * size;
 			itemCapacity = 25;
 			craftTime = 90f;
@@ -389,7 +391,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.lead, 35
 			));
 			size = 3;
-			localizedName = "crft0000";
+			localizedName = "crafterLarge0000";
 			health = 280 * size * size;
 			itemCapacity = 50;
 			craftTime = 60f;
@@ -409,7 +411,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.silicon, 15
 			));
 			size = 3;
-			localizedName = "crft0001";
+			localizedName = "crafterLarge0001";
 			health = 290 * size * size;
 			itemCapacity = 50;
 			craftTime = 60f;
@@ -431,7 +433,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.titanium, 35
 			));
 			size = 3;
-			localizedName = "crft0010";
+			localizedName = "crafterLarge0010";
 			health = 300 * size * size;
 			itemCapacity = 65;
 			craftTime = 45f;
@@ -450,7 +452,7 @@ public class Bin0011Blocks implements ContentList {
 				Items.titanium, 50
 			));
 			size = 3;
-			localizedName = "crft0011";
+			localizedName = "crafterLarge0011";
 			health = 325 * size * size;
 			itemCapacity = 65;
 			craftTime = 45f;
