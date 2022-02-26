@@ -85,9 +85,7 @@ public class Bin0011TechTree implements ContentList {
 		extendNode(Blocks.coreShard, () -> {
 			nodeProduce(Bin0011Items.item00, () -> {
 				nodeProduce(Bin0011Items.item01);
-				nodeProduce(Bin0011Items.item10, () -> {
-					nodeProduce(Bin0011Items.item11);
-				});
+				nodeProduce(Bin0011Items.item11);
 			});
 		});
 		// end item
@@ -146,7 +144,7 @@ public class Bin0011TechTree implements ContentList {
 			node(Bin0011Blocks.node000, () -> {
 				node(Bin0011Blocks.node001, () -> {
 					node(Bin0011Blocks.gen0000, Seq.with(new Research(Bin0011Items.item10)), () -> {
-						node(Bin0011Blocks.gen0001, Seq.with(new Research(Bin0011Items.item10));
+						node(Bin0011Blocks.gen0001, Seq.with(new Research(Bin0011Items.item10)));
 					});
 				});
 			});
