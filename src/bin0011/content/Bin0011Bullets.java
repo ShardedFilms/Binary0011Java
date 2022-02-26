@@ -13,7 +13,7 @@ public class Bin0011Bullets implements ContentList{
     public static BulletType
 
     //artillery
-    artillery00;
+    binaryArtilleryDense;
 
     @Override
     public void load(){
