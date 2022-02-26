@@ -99,6 +99,14 @@ public class Bin0011TechTree implements ContentList{
 			});
 		});
 		// end power
+	}
+
+    
+	public static void setup(){
+        context = null;
+        map = new ObjectMap<>();
+        all = new Seq<>();
+    }
 
     //all the "node" methods are hidden, because they are for internal context-dependent use only
     //for custom research, just use the TechNode constructor
