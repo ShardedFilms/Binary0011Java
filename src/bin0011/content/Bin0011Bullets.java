@@ -1,4 +1,4 @@
-package mindustry.content;
+package bin0011.content;
 
 import arc.graphics.*;
 import mindustry.ctype.*;
@@ -6,7 +6,7 @@ import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
 import mindustry.graphics.*;
 
-public class Bullets implements ContentList{
+public class Bin0011Bullets implements ContentList{
     public static BulletType
 
     //artillery
