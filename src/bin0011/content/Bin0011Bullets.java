@@ -18,7 +18,7 @@ public class Bin0011Bullets implements ContentList{
     @Override
     public void load(){
 
-        artillery00 = new ArtilleryBulletType(3f, 20, "shell"){{
+        binaryArtilleryDense = new ArtilleryBulletType(3f, 20, "shell"){{
             hitEffect = Fx.flakExplosion;
             knockback = 0.8f;
             lifetime = 80f;
