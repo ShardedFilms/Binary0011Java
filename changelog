@@ -1,13 +1,8 @@
-(+) 2 ores¹
-(+) 2 batteries
-(+) turret0110, 0111
-(+) burner001
-(*) item00 & item10 is now mineable (and the ore is now spawning in displan)¹
-(*) resprite & resize(d) gen0001
-(*) resize & buffed turret0100
-(*) renamed crafters (crft, mcrft -> crafter, crafterLarge)
+(+) turret1000
+(+) wall10, wallLarge10, wallHuge10
+
 
 to do list
-mcrft0010 & 0011
-10 & 11 ore
+more 2x2 and 3x3 turrets
+techtree fix(es)
 more burner gens*
