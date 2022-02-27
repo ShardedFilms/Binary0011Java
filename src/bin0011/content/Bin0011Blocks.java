@@ -38,7 +38,7 @@ public class Bin0011Blocks implements ContentList {
 		// power
 		node000, node001, gen0000, gen0001, burner000, burner001, panel00, panel01, battery00, battery01,
 		// turrets
-		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101, turret0110, turret0111,
+		turret0000, turret0001, turret0010, turret0011, turret0100, turret0101, turret0110, turret0111, turret1000,
 		// production
 		crafter0000, crafter0001, crafterLarge0000, crafterLarge0001, crafterLarge0010, crafterLarge0011;
 
@@ -347,6 +347,42 @@ public class Bin0011Blocks implements ContentList {
 	 	 	bulletDamage = 30f;
 	 	 	reloadTime = 0.1f;
 		}};
+		turret1000 /* anjai 1000 */ = new ItemTurret("turret1000"){{
+			requirements(Category.turret, with(Bin0011Items.item00, 200, Bin0011Items.item01, 175, Bin0011Items.item10, 80, Bin0011Items.item11, 135));
+			health = 200 * size * size;
+			reloadTime = 40f;
+            		shootShake = 4f;
+            		range = 320f;
+            		recoilAmount = 5f;
+            		shots = 2;
+            		spread = 20f;
+            		restitution = 0.3f;
+            		shootCone = 30;
+            		size = 3;
+			
+			ammo(
+				Bin0011Items.item00, new ArtilleryBulletType(){{
+					hitEffect = Fx.flakExplosion;
+					knockback = 0.9f;
+					lifetime =  100f;
+					width = height = 11f;
+					collidesTiles = false;
+					splashDamageRadius = 30f;
+					splashDamage = 45f;
+				}},
+				Bin0011Items.item01, new ArtilleryBulletType(){{
+					hitEffect = Fx.flakExplosion;
+					knockback = 0.9f;
+					lifetime =  100f;
+					width = height = 12f;
+					collidesTiles = false;
+					splashDamageRadius = 30f;
+					splashDamage = 57f;
+					homingPower = 8f;
+					homingRange = 65f;
+				}}
+			);
+		}}; // iya, gw bikin code shoot types barengan sama turret, gw males
 		// end turret
 		// reg production
 		crafter0000 = new GenericCrafter("mcrft0000") {{
