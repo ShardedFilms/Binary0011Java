@@ -36,7 +36,7 @@ public class Bin0011Blocks implements ContentList {
 		// ore
 		oreItem00, oreItem10,
 		// defense
-		wall00, wallLarge00, wall01, wallLarge01,
+		wall00, wallLarge00, wall01, wallLarge01, wall10, wallLarge10, wallHuge10,
 		// power
 		node000, node001, gen0000, gen0001, burner000, burner001, panel00, panel01, battery00, battery01,
 		// turrets
@@ -86,6 +86,32 @@ public class Bin0011Blocks implements ContentList {
 			health = 2500;
 			insulated = true;
 			absorbLasers = true;
+		}};
+		wall10 =  new Wall("wall10") {{
+			requirements(Category.defense, with(Bin0011Items.item10, 6));
+			localizedName = "wall10";
+			size = 1;
+			health = 175 * 4;
+			chanceDeflect = 25f;
+            		flashHit = true;
+		}};
+		wallLarge10 =  new Wall("wall-large10") {{
+			requirements(Category.defense, with(Bin0011Items.item10, 6));
+			localizedName = "wallLarge10";
+			size = 2;
+			health = 350 * 4;
+			chanceDeflect = 35f;
+            		flashHit = true;
+		}};
+		wallHuge10 =  new Wall("wall-huge10") {{
+			requirements(Category.defense, with(Bin0011Items.item10, 6));
+			localizedName = "wallHuge10";
+			size = 525 * 4;
+			health = 350 * 4;
+			chanceDeflect = 35f;
+            		flashHit = true;
+			insulated = true;
+			absorbLasers = true; // bjirr
 		}};
 		// end defense
 		// reg power
