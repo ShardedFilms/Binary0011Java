@@ -346,10 +346,12 @@ public class Bin0011Blocks implements ContentList {
 	 	 	shootLength = 5f;
 	 	 	bulletDamage = 30f;
 	 	 	reloadTime = 0.1f;
+			localizedName = "turret0111"
 		}};
 		turret1000 /* anjai 1000 */ = new ItemTurret("turret1000"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 200, Bin0011Items.item01, 175, Bin0011Items.item10, 80, Bin0011Items.item11, 135));
 			health = 200 * size * size;
+			localizedName = "turret1000"
 			reloadTime = 40f;
             		shootShake = 4f;
             		range = 320f;
