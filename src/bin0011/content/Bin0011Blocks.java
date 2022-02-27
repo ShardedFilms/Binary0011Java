@@ -218,7 +218,7 @@ public class Bin0011Blocks implements ContentList {
             		reloadTime = 50f;
             		recoilAmount = 1f;
            	 	range = 256f;
-            		inaccuracy = 0.5f;
+            		inaccuracy = 0f;
             		shootCone = 10f;
             		health = 325;
             		shootSound = Sounds.bang;
@@ -346,42 +346,59 @@ public class Bin0011Blocks implements ContentList {
 	 	 	shootLength = 5f;
 	 	 	bulletDamage = 30f;
 	 	 	reloadTime = 0.1f;
-			localizedName = "turret0111"
+			localizedName = "turret0111";
 		}};
 		turret1000 /* anjai 1000 */ = new ItemTurret("turret1000"){{
 			requirements(Category.turret, with(Bin0011Items.item00, 200, Bin0011Items.item01, 175, Bin0011Items.item10, 80, Bin0011Items.item11, 135));
 			health = 200 * size * size;
-			localizedName = "turret1000"
-			reloadTime = 40f;
-            		shootShake = 4f;
-            		range = 320f;
-            		recoilAmount = 5f;
-            		shots = 2;
-            		spread = 20f;
-            		restitution = 0.3f;
-            		shootCone = 30;
-            		size = 3;
+			localizedName = "turret1000";
+			size = 3;
+			targetAir = false;
+            		reloadTime = 30f;
+            		recoilAmount = 2f;
+            		range = 235f;
+            		inaccuracy = 1f;
+            		shootCone = 10f;
+            		limitRange(0f);
+			shots = 2;
+			shootSound = Sounds.bang;
 			
 			ammo(
 				Bin0011Items.item00, new ArtilleryBulletType(){{
 					hitEffect = Fx.flakExplosion;
-					knockback = 0.9f;
-					lifetime =  100f;
+					knockback = 1f;
+					lifetime = 80f;
 					width = height = 11f;
 					collidesTiles = false;
-					splashDamageRadius = 30f;
+					splashDamageRadius = 30f * 0.75f;
 					splashDamage = 45f;
 				}},
 				Bin0011Items.item01, new ArtilleryBulletType(){{
 					hitEffect = Fx.flakExplosion;
-					knockback = 0.9f;
-					lifetime =  100f;
-					width = height = 12f;
-					collidesTiles = false;
-					splashDamageRadius = 30f;
-					splashDamage = 57f;
-					homingPower = 8f;
-					homingRange = 65f;
+            				knockback = 0.8f;
+            				lifetime = 80f;
+            				width = height = 11f;
+            				collidesTiles = false;
+            				splashDamageRadius = 25f * 0.75f;
+            				splashDamage = 54f;
+            				reloadMultiplier = 1.2f;
+            				ammoMultiplier = 3f;
+            				homingPower = 1f;
+            				homingRange = 50f;
+				}}
+				Bin0011Items.item10, new ArtilleryBulletType(){{
+					hitEffect = Fx.blastExplosion;
+            				knockback = 0.8f;
+            				lifetime = 80f;
+            				width = height = 14f;
+            				collidesTiles = false;
+            				ammoMultiplier = 4f;
+            				splashDamageRadius = 45f * 0.75f;
+            				splashDamage = 55f;
+            				backColor = Pal.white;
+            				frontColor = Pal.darkishGray;
+
+            				status = StatusEffects.shocked;
 				}}
 			);
 		}}; // iya, gw bikin code shoot types barengan sama turret, gw males
