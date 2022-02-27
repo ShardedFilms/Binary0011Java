@@ -385,7 +385,7 @@ public class Bin0011Blocks implements ContentList {
             				ammoMultiplier = 3f;
             				homingPower = 1f;
             				homingRange = 50f;
-				}}
+				}},
 				Bin0011Items.item10, new ArtilleryBulletType(){{
 					hitEffect = Fx.blastExplosion;
             				knockback = 0.8f;
