@@ -363,11 +363,13 @@ public class Bin0011Blocks implements ContentList {
             		shootCone = 10f;
             		limitRange(0f);
 			shots = 2;
+			rotateSpeed = 7.5f;
 			shootSound = Sounds.bang;
 			
 			ammo(
 				Bin0011Items.item00, new ArtilleryBulletType(){{
 					hitEffect = Fx.flakExplosion;
+					speed = 6.5f;
 					knockback = 1f;
 					lifetime = 80f;
 					width = height = 11f;
@@ -378,6 +380,7 @@ public class Bin0011Blocks implements ContentList {
 				Bin0011Items.item01, new ArtilleryBulletType(){{
 					hitEffect = Fx.flakExplosion;
             				knockback = 0.8f;
+					speed = 6.8f;
             				lifetime = 80f;
             				width = height = 11f;
             				collidesTiles = false;
@@ -391,6 +394,7 @@ public class Bin0011Blocks implements ContentList {
 				Bin0011Items.item10, new ArtilleryBulletType(){{
 					hitEffect = Fx.blastExplosion;
             				knockback = 0.8f;
+					speed = 7.2f;
             				lifetime = 80f;
             				width = height = 14f;
             				collidesTiles = false;
