@@ -397,7 +397,7 @@ public class Bin0011Blocks implements ContentList {
             				ammoMultiplier = 4f;
             				splashDamageRadius = 45f * 0.75f;
             				splashDamage = 55f;
-            				backColor = Pal.white;
+            				backColor = Color.valueOf("ffffff");
             				frontColor = Pal.darkishGray;
 
             				status = StatusEffects.shocked;
